@@ -67,6 +67,7 @@ i18n.use(initReactI18next).init({
 });
 
 const donates = [
+  // Mock Data
   {
     image: binance,
     a: "Binance-Peg...(BUSD)",
