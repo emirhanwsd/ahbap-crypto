@@ -13,13 +13,18 @@ i18n.use(initReactI18next).init({
         subTitle:
           "Hello, we are collecting crypto donations through Ahbap to help earthquake victims in Turkey. You can use the addresses below to donate cryptocurrency to support this cause.",
         totalDonation: "Total Amount of Donation",
+        donationAdresses: "Bağış Yapabileceğiniz Kripto Adresleri",
+        donationAlert:
+          "Transferi gerçekleştirmeden önce, mutlaka orjinal tweet üzerinden adresi kopyalayın. Başka cüzdan bilgilerine güvenmeyin.",
+        donationTotalAlert: `Burada belirtilen USD ve TRY karşılıkları, toplamda 3 cüzdan adresi üzerindeki toplam tahmini değeri gösteriyor. TRY değeri, doğrudan USD'deki değerin güncel kura göre çevirimiyle elde ediliyor. Buradaki değerler her 30 saniyede bir güncelleniyor, son veriye ulaşmak için sayfayı yenilemeniz gerekebilir.<br/><br/>Toplamda toplanan tutar hakkında daha ayrıntılı bilgi edinmek istiyorsanız Nansen üzerinden gerçek zamanlı takip edebilirsiniz: <a class="text-brand font-medium hover:underline" href="https://portfolio.nansen.ai/dashboard/APE-JBS8U7">https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>`,
         balance: "Balance",
         bnbValue: "BNB Value",
         thingsToConsider: "Things to Consider While Making a Transfer",
-        cryptoNetwork: "{{kripto}} Network",
-        cryptoNetworkWarning: "All coins are supported but select BEP20 network while sending.",
+        cryptoNetwork: "{{crypto}} Network",
+        cryptoNetworkWarning:
+          "All coins are supported but select BEP20 network while sending.",
         whichAddress: "How much was donated to which address?",
-        page: "Page",
+        pagination: "{{page}}. Page of {{totalPage}} Pages",
         turkish: "Turkish",
         english: "English",
       },
@@ -31,14 +36,18 @@ i18n.use(initReactI18next).init({
         subTitle:
           "Merhabalar, Türkiye’de yaşanan deprem afetine yardımcı olmak için Ahbap aracılığı ile kripto bağış topluyoruz. Bu bağışa kripto para ile destek olmak için aşağıdaki adresleri kullanabiliriz.",
         totalDonation: "Toplanan Bağış Miktarı",
+        donationAdresses: "Bağış Yapabileceğiniz Kripto Adresleri",
+        donationAlert:
+          "Transferi gerçekleştirmeden önce, mutlaka orjinal tweet üzerinden adresi kopyalayın. Başka cüzdan bilgilerine güvenmeyin.",
+        donationTotalAlert: `Burada belirtilen USD ve TRY karşılıkları, toplamda 3 cüzdan adresi üzerindeki toplam tahmini değeri gösteriyor. TRY değeri, doğrudan USD'deki değerin güncel kura göre çevirimiyle elde ediliyor. Buradaki değerler her 30 saniyede bir güncelleniyor, son veriye ulaşmak için sayfayı yenilemeniz gerekebilir.<br/><br/>Toplamda toplanan tutar hakkında daha ayrıntılı bilgi edinmek istiyorsanız Nansen üzerinden gerçek zamanlı takip edebilirsiniz: <a class="text-brand font-medium hover:underline" href="https://portfolio.nansen.ai/dashboard/APE-JBS8U7">https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>`,
         balance: "Bakiye",
         bnbValue: "BNB Değeri",
         thingsToConsider: "Transfer Yapılırken Dikkat Edilmesi Gerekenler",
-        cryptoNetwork: "{{kripto}} Ağı",
+        cryptoNetwork: "{{crypto}} Ağı",
         cryptoNetworkWarning:
           "Tüm coinler destekleniyor fakat yollarken BEP20 ağını seçin.",
         whichAddress: "Hangi adrese ne kadar bağış yapıldı?",
-        page: "Sayfa",
+        pagination: "{{totalPage}} sayfa içinden {{page}}. Sayfa",
         turkish: "Türkçe",
         english: "İngilizce",
       },

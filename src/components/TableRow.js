@@ -8,8 +8,11 @@ const TableRow = (
       <img className="h-8 w-8" src={`/${chain}.svg`} alt="" />
 
       <div className="flex flex-col">
-        <span>{SYMBOL_NAMES[symbol]} ({symbol})</span>
-        <span className="truncate max-w-[200px]">{from_address}</span>
+        <span>
+          {SYMBOL_NAMES[symbol]} ({symbol})
+        </span>
+
+        <span className="truncate w-64 md:w-auto">{from_address}</span>
       </div>
     </div>
 

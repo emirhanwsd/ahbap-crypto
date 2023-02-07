@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <header>
-      <div className="sm:h-[589px] pb-16 sm:pb-0 bg-black text-white flex flex-col items-center text-center px-4 lg:px-0">
+      <div className="bg-brand sm:h-[589px] pb-16 sm:pb-0 bg-black text-white flex flex-col items-center text-center px-4 lg:px-0">
         <img className="mt-24 sm:mt-10" src={ahbap} alt="" />
 
         <h1 className="text-xl sm:text-2xl font-semibold mt-8 max-w-7xl">
