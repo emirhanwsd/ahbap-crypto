@@ -26,6 +26,7 @@ i18n.use(initReactI18next).init({
         pagination: "{{page}}. Page of {{totalPage}} Pages",
         turkish: "Turkish",
         english: "English",
+        copy: "Copy",
       },
     },
     tr: {
@@ -48,6 +49,7 @@ i18n.use(initReactI18next).init({
         pagination: "{{totalPage}} sayfa içinden {{page}}. Sayfa",
         turkish: "Türkçe",
         english: "İngilizce",
+        copy: "Kopyala",
       },
     },
   },
