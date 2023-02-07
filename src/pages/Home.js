@@ -1,6 +1,14 @@
-import ahbap from "../assets/ahbap.png";
+import ahbap from "../assets/ahbap.png"
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
+  const { t, i18n } = useTranslation();
+
+  /**
+   * To change language:
+   * i18n.changeLanguage('en')
+   */
+
   return (
     <>
       <header className="h-[589px] bg-black text-white flex flex-col items-center justify-center text-center">
@@ -18,6 +26,10 @@ const Home = () => {
           destek olmak için aşağıdaki adresleri kullanabiliriz.
         </h2>
       </header>
+
+      <main>
+      {t('Turkiye buyuk depremlerle sarsiliyor')}
+      </main>
     </>
   );
 };
