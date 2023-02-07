@@ -382,24 +382,6 @@ const Home = () => {
           ))}
         </div>
 
-        {/*Eski Tasarım*/}
-
-        {/*<div className="mt-6 self-center sm:self-end flex items-center gap-x-2">*/}
-        {/*  {[1, 2, 3, 4, 5, 6].map((_) => (*/}
-        {/*    <div*/}
-        {/*      onClick={() => setPage(_)}*/}
-        {/*      className={classNames(*/}
-        {/*        "h-10 w-10 border rounded inline-flex items-center justify-center font-bold hover:bg-gray-100 transition-colors cursor-pointer",*/}
-        {/*        {*/}
-        {/*          "bg-black text-white hover:bg-zinc-800": page === _,*/}
-        {/*        }*/}
-        {/*      )}*/}
-        {/*    >*/}
-        {/*      {_}*/}
-        {/*    </div>*/}
-        {/*  ))}*/}
-        {/*</div>*/}
-
         <div className="mt-6 self-center sm:self-end flex items-center gap-x-4 select-none">
           <button
             disabled={loading || page === 1}
