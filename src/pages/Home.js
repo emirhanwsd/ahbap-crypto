@@ -10,19 +10,22 @@ import Header from "../components/Header";
 
 const DONATE_PER_PAGE = 5;
 
+const BASE_URL = "https://ahbap-wallets.vercel.app/api";
+
 const Home = () => {
   const { t } = useTranslation();
   const [page, setPage] = useState(0);
   const [balance, setBalance] = useState([]);
   const [transaction, setTransaction] = useState([]);
 
+  // [TODO]: Burası için yeni endpoint gelecek, ya da mevcut endpoint değişecek.
   const fetchBalance = () =>
-    fetch("https://ahbap-wallets.vercel.app/api/balance")
+    fetch(`${BASE_URL}/balance`)
       .then((res) => res.json())
       .then((res) => setBalance(res));
 
   const fetchTransactions = () =>
-    fetch("https://ahbap-wallets.vercel.app/api/transaction")
+    fetch(`${BASE_URL}/transaction`)
       .then((res) => res.json())
       .then((res) => setTransaction(res.transactions));
 
