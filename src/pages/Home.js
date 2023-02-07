@@ -17,7 +17,7 @@ i18n.use(initReactI18next).init({
           "Turkey is being effected by destructive earthquakes. 10,000 buildings were collapsed. There are 50,000 people under rubble. 13 million people are waiting for help. You can send your help via the following cryptocurrency wallet addresses.",
         subTitle:
           "Hello, we are collecting crypto donations through Ahbap to help earthquake victims in Turkey. You can use the addresses below to donate cryptocurrency to support this cause.",
-        "Toplanan Bagis Miktari": "Total Amount of Donation",
+        totalDonation: "Total Amount of Donation",
         balance: "Balance",
         bnbValue: "BNB Value",
         thingsToConsider: "Things to Consider While Making a Transfer",
@@ -35,7 +35,7 @@ i18n.use(initReactI18next).init({
           "Türkiye büyük depremlerle sarsılıyor. 10.000 bina yıkıldı. Göcük altında 50.000 kişi var. 13 milyon insan yardım bekliyor. Aşağıdaki kriptopara cüzdan adresleri üzerinden yardımlarınızı iletebilirsiniz.",
         subTitle:
           "Merhabalar, Türkiye’de yaşanan deprem afetine yardımcı olmak için Ahbap aracılığı ile kripto bağış topluyoruz. Bu bağışa kripto para ile destek olmak için aşağıdaki adresleri kullanabiliriz.",
-        "Toplanan Bagis Miktari": "Toplanan Bağış Miktarı",
+        totalDonation: "Toplanan Bağış Miktarı",
         balance: "Bakiye",
         bnbValue: "BNB Değeri",
         thingsToConsider: "Transfer Yapılırken Dikkat Edilmesi Gerekenler",
@@ -61,16 +61,20 @@ const DONATE_PER_PAGE = 5;
 const Home = () => {
   const { t } = useTranslation();
   const [page, setPage] = useState(0);
+  const [balance, setBalance] = useState([]);
   const [transaction, setTransaction] = useState([]);
 
+  const fetchBalance = () => fetch('https://ahbap-wallets.vercel.app/api/balance')
+    .then(res => res.json())
+    .then(res => setBalance(res))
 
   const fetchTransactions = () => fetch('https://ahbap-wallets.vercel.app/api/transaction')
     .then(res => res.json())
-    .then(res => {
-      setTransaction(res.transactions)
-    })
+    .then(res => setTransaction(res.transactions))
+
 
   useEffect(() => {
+    fetchBalance();
     fetchTransactions();
   }, []);
 
@@ -83,25 +87,27 @@ const Home = () => {
       <Header />
 
       <div className="mt-12 flex flex-col lg:flex-row gap-6 lg:h-[420px] justify-center lg:-mt-40 px-8 lg:px-0">
+        {/* [TODO]: API'de olmayan eksik datalar tamamlandığında, burası doldurulmalı. */}
         <div className="bg-white lg:w-[565px] border rounded shadow px-5 py-8 flex flex-col text-black text-left">
-          <h1 className="font-bold text-2xl">{t("Toplanan Bagis Miktari")}</h1>
+          <h1 className="font-bold text-2xl">{t("totalDonation")}</h1>
 
           <div className="mt-4 flex flex-col sm:flex-row sm:items-center gap-5">
             <div className="w-full sm:w-auto px-8 py-4 sm:py-6 inline-flex items-center justify-center rounded border border-brand text-brand text-2xl font-bold">
-              $157.082 BNB
+              $- BNB
             </div>
 
             <div className="flex flex-col">
-              <span>150.000$</span>
-              <span>1.000.230 TRY</span>
+              <span>- $</span>
+              <span>- TRY</span>
             </div>
           </div>
 
           <div className="mt-5 flex flex-col gap-y-4">
-            <span>{t("balance")}: 11.048940004436707746 BNB</span>
-            <span>{t("bnbValue")}: $3,648.80 (@ $330.24/BNB)</span>
+            <span><b>{t("balance")}</b>: {balance?.totalBalance} BNB</span>
+            <span><b>{t("bnbValue")}</b>: $- (@ $-/BNB)</span>
           </div>
         </div>
+        {/* - */}
 
         <div className="bg-white lg:w-[565px] border rounded shadow px-5 py-8 flex flex-col text-black text-left">
           <h1 className="font-bold text-2xl">{t("thingsToConsider")}</h1>
