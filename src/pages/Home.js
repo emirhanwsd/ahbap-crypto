@@ -260,7 +260,7 @@ const Home = () => {
                           active
                             ? "bg-gray-100 text-gray-900"
                             : "text-gray-700",
-                          "block px-4 py-2 text-sm flex items-center gap-x-2 cursor-pointer"
+                          "px-4 py-2 text-sm flex items-center gap-x-2 cursor-pointer"
                         )}
                       >
                         <img className="h-5 rounded-sm" src={tr} alt="" />
@@ -280,7 +280,7 @@ const Home = () => {
                           active
                             ? "bg-gray-100 text-gray-900"
                             : "text-gray-700",
-                          "block px-4 py-2 text-sm flex items-center gap-x-2 cursor-pointer"
+                          "px-4 py-2 text-sm flex items-center gap-x-2 cursor-pointer"
                         )}
                       >
                         <img className="h-5 rounded-sm" src={en} alt="" />
@@ -408,7 +408,7 @@ const Home = () => {
                 setPage((page) => page - 1);
               }
             }}
-            className="h-10 w-10 border rounded inline-flex items-center justify-center font-bold hover:bg-gray-100 transition-all cursor-pointer disabled:opacity-50 disabled:pointer-events-none transition-opacity"
+            className="h-10 w-10 border rounded inline-flex items-center justify-center font-bold hover:bg-gray-100 transition-all cursor-pointer disabled:opacity-50 disabled:pointer-events-none"
           >
             <ChevronLeftIcon className="h-4" />
           </button>
@@ -422,7 +422,7 @@ const Home = () => {
             onClick={() => {
               setPage((page) => page + 1);
             }}
-            className="h-10 w-10 border rounded inline-flex items-center justify-center font-bold hover:bg-gray-100 transition-colors cursor-pointer disabled:pointer-events-none transition-opacity"
+            className="h-10 w-10 border rounded inline-flex items-center justify-center font-bold hover:bg-gray-100 transition-all cursor-pointer disabled:pointer-events-none"
           >
             <ChevronRightIcon className="h-4" />
           </button>
