@@ -1,7 +1,7 @@
 import ahbap from "../assets/ahbap.png";
 import binance from "../assets/binance.png";
 import TableRow from "../components/TableRow";
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import classNames from "classnames";
 import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
@@ -9,6 +9,7 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Menu, Transition } from "@headlessui/react";
 import tr from "../assets/flags/tr.png";
 import en from "../assets/flags/en.png";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -29,6 +30,7 @@ i18n.use(initReactI18next).init({
           "All coins are supported but select BEP20 network while sending.",
         "Hangi adrese ne kadar bagis yapildi?":
           "How much was donated to which address?",
+        Sayfa: "Page",
         Turkce: "Turkish",
         Ingilizce: "English",
       },
@@ -51,6 +53,7 @@ i18n.use(initReactI18next).init({
           "Tüm coinler destekleniyor fakat yollarken BEP20 ağını seçin.",
         "Hangi adrese ne kadar bagis yapildi?":
           "Hangi adrese ne kadar bağış yapıldı?",
+        Sayfa: "Sayfa",
         Turkce: "Türkçe",
         Ingilizce: "İngilizce",
       },
@@ -120,11 +123,88 @@ const donates = [
     c: "$92,322.82",
     d: "@1.0002",
   },
+  {
+    image: binance,
+    a: "Binance-Peg...(BUSD)",
+    b: "94,308.043284 BUSD",
+    c: "$92,322.82",
+    d: "@1.0002",
+  },
+  {
+    image: binance,
+    a: "Binance-Peg...(BUSD)",
+    b: "94,308.043284 BUSD",
+    c: "$92,322.82",
+    d: "@1.0002",
+  },
+  {
+    image: binance,
+    a: "Binance-Peg...(BUSD)",
+    b: "94,308.043284 BUSD",
+    c: "$92,322.82",
+    d: "@1.0002",
+  },
+  {
+    image: binance,
+    a: "Binance-Peg...(BUSD)",
+    b: "94,308.043284 BUSD",
+    c: "$92,322.82",
+    d: "@1.0002",
+  },
+  {
+    image: binance,
+    a: "Binance-Peg...(BUSD)",
+    b: "94,308.043284 BUSD",
+    c: "$92,322.82",
+    d: "@1.0002",
+  },
+  {
+    image: binance,
+    a: "Binance-Peg...(BUSD)",
+    b: "94,308.043284 BUSD",
+    c: "$92,322.82",
+    d: "@1.0002",
+  },
+  {
+    image: binance,
+    a: "Binance-Peg...(BUSD)",
+    b: "94,308.043284 BUSD",
+    c: "$92,322.82",
+    d: "@1.0002",
+  },
+  {
+    image: binance,
+    a: "Binance-Peg...(BUSD)",
+    b: "94,308.043284 BUSD",
+    c: "$92,322.82",
+    d: "@1.0002",
+  },
+  {
+    image: binance,
+    a: "Binance-Peg...(BUSD)",
+    b: "94,308.043284 BUSD",
+    c: "$92,322.82",
+    d: "@1.0002",
+  },
 ];
+
+const DONATE_PER_PAGE = 5;
 
 const Home = () => {
   const { t, i18n } = useTranslation();
-  const [page, setPage] = useState(2);
+  const [loading, setLoading] = useState(false);
+  const [page, setPage] = useState(1);
+
+  useEffect(() => {
+    // TODO
+    setLoading(true);
+
+    // Sayfaya göre istek atılacak.
+
+    setLoading(false);
+
+    // İstek tamamlandığında tekrar false olarak ayarlanacak.
+  }, [page]);
 
   return (
     <div className="pb-24">
@@ -307,25 +387,55 @@ const Home = () => {
         </h1>
 
         <div>
-          {donates.map((donate) => (
+          {[...donates].slice(0, DONATE_PER_PAGE).map((donate) => (
             <TableRow {...donate} />
           ))}
         </div>
 
-        <div className="mt-6 self-center sm:self-end flex items-center gap-x-2">
-          {[1, 2, 3, 4, 5, 6].map((_) => (
-            <div
-              onClick={() => setPage(_)}
-              className={classNames(
-                "h-10 w-10 border rounded inline-flex items-center justify-center font-bold hover:bg-gray-100 transition-colors cursor-pointer",
-                {
-                  "bg-black text-white hover:bg-zinc-800": page === _,
-                }
-              )}
-            >
-              {_}
-            </div>
-          ))}
+        {/*Eski Tasarım*/}
+
+        {/*<div className="mt-6 self-center sm:self-end flex items-center gap-x-2">*/}
+        {/*  {[1, 2, 3, 4, 5, 6].map((_) => (*/}
+        {/*    <div*/}
+        {/*      onClick={() => setPage(_)}*/}
+        {/*      className={classNames(*/}
+        {/*        "h-10 w-10 border rounded inline-flex items-center justify-center font-bold hover:bg-gray-100 transition-colors cursor-pointer",*/}
+        {/*        {*/}
+        {/*          "bg-black text-white hover:bg-zinc-800": page === _,*/}
+        {/*        }*/}
+        {/*      )}*/}
+        {/*    >*/}
+        {/*      {_}*/}
+        {/*    </div>*/}
+        {/*  ))}*/}
+        {/*</div>*/}
+
+        <div className="mt-6 self-center sm:self-end flex items-center gap-x-4 select-none">
+          <button
+            disabled={loading || page === 1}
+            onClick={() => {
+              if (page - 1 > 0) {
+                setPage((page) => page - 1);
+              }
+            }}
+            className="h-10 w-10 border rounded inline-flex items-center justify-center font-bold hover:bg-gray-100 transition-colors cursor-pointer disabled:opacity-50 disabled:pointer-events-none transition-opacity"
+          >
+            <ChevronLeftIcon className="h-4" />
+          </button>
+
+          <span>
+            {page}. {t("Sayfa")}
+          </span>
+
+          <button
+            disabled={loading}
+            onClick={() => {
+              setPage((page) => page + 1);
+            }}
+            className="h-10 w-10 border rounded inline-flex items-center justify-center font-bold hover:bg-gray-100 transition-colors cursor-pointer disabled:pointer-events-none transition-opacity"
+          >
+            <ChevronRightIcon className="h-4" />
+          </button>
         </div>
       </div>
     </div>
