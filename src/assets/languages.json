@@ -1,0 +1,480 @@
+{
+  "resources": {
+    "tr": {
+      "translation": {
+        "title": "Türkiye büyük depremlerle sarsılıyor. 10.000 bina yıkıldı. Göcük altında 50.000 kişi var. 13 milyon insan yardım bekliyor. Aşağıdaki kriptopara cüzdan adresleri üzerinden yardımlarınızı iletebilirsiniz.",
+        "subTitle": "Merhabalar, Türkiye’de yaşanan deprem afetine yardımcı olmak için Ahbap aracılığı ile kripto bağış topluyoruz. Bu bağışa kripto para ile destek olmak için aşağıdaki adresleri kullanabiliriz.",
+        "totalDonation": "Toplanan Bağış Miktarı",
+        "donationAdresses": "Bağış Yapabileceğiniz Kripto Adresleri",
+        "donationAlert": "Transferi gerçekleştirmeden önce, mutlaka <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'>orjinal tweet<a/> üzerinden adresi kopyalayın. Başka cüzdan bilgilerine güvenmeyin.",
+        "donationTotalAlert": "Burada belirtilen USD ve TRY karşılıkları, toplamda 3 cüzdan adresi üzerindeki toplam tahmini değeri gösteriyor. TRY değeri, doğrudan USD'deki değerin güncel kura göre çevirimiyle elde ediliyor. Buradaki değerler her 30 saniyede bir güncelleniyor, son veriye ulaşmak için sayfayı yenilemeniz gerekebilir.<br/><br/>Toplamda toplanan tutar hakkında daha ayrıntılı bilgi edinmek istiyorsanız Nansen üzerinden gerçek zamanlı takip edebilirsiniz: <a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
+        "balance": "Bakiye",
+        "bnbValue": "BNB Değeri",
+        "thingsToConsider": "Transfer Yapılırken Dikkat Edilmesi Gerekenler",
+        "cryptoNetwork": "{{crypto}} Ağı",
+        "cryptoNetworkWarning": "Tüm coinler destekleniyor fakat yollarken BEP20 ağını seçin.",
+        "whichAddress": "Hangi adrese ne kadar bağış yapıldı?",
+        "pagination": "{{page}}/{{totalPage}}"
+      }
+    },
+    "nl": {
+      "translation": {
+        "title": "Turkije wordt getroffen door verwoestende aardbevingen. 10.000 gebouwen zijn ingestort. Er liggen 50.000 mensen onder het puin. 13 miljoen mensen wachten op hulp. U kunt uw hulp sturen via de volgende cryptocurrency wallet adressen.",
+        "subTitle": "Hallo, we verzamelen cryptodonaties via Ahbap om de slachtoffers van de aardbeving in Turkije te helpen. U kunt de onderstaande adressen gebruiken om cryptocurrency te doneren om dit doel te steunen.",
+        "totalDonation": "Totaal bedrag van de donatie",
+        "donationAdresses": "Crypto-adressen die u kunt doneren",
+        "donationAlert": "Voordat u de overdracht uitvoert, moet u <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504! target='_blank'>orjinal tweet<a/> kopieer het adres ervan. Vertrouw geen andere portefeuillegegevens.",
+        "donationTotalAlert": "De hier aangegeven USD- en TRY-equivalenten tonen de totale geschatte waarde op in totaal 3 wallet-adressen. De TRY-waarde wordt verkregen door de waarde in USD rechtstreeks om te rekenen naar de huidige wisselkoers. De waarden hier worden elke 30 seconden bijgewerkt, het kan zijn dat u de pagina moet verversen om de meest recente gegevens te krijgen.<br/><br/>Als u meer gedetailleerde informatie wilt over het totale ingezamelde bedrag, kunt u dat in real time volgen via Nansen: <a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
+        "balance": "Balans",
+        "bnbValue": "BNB Waarde",
+        "thingsToConsider": "Dingen om te overwegen bij het maken van een transfer",
+        "cryptoNetwork": "{{crypto}} Netwerk",
+        "cryptoNetworkWarning": "Alle munten worden ondersteund, maar selecteer het BEP20-netwerk tijdens het verzenden.",
+        "whichAddress": "Hoeveel is er geschonken aan welk adres?",
+        "pagination": "{{page}}/{{totalPage}}"
+      }
+    },
+    "hu": {
+      "translation": {
+        "title": "Törökországot hatalmas földrengések rázzák meg. 10 000 épület omlott össze. A földrengés alatt 50 000 ember van. 13 millió ember vár segítségre. A következő kriptopénztárca-címeken keresztül küldheted el a támogatásodat.",
+        "subTitle": "Helló, kripto adományokat gyűjtünk az Ahbapon keresztül a törökországi földrengés katasztrófa megsegítésére. Az alábbi címeket használhatjuk az adományozás kriptovalutával történő támogatására.",
+        "totalDonation": "Az összegyűjtött adományok összege",
+        "donationAdresses": "Adományozható kripto címek",
+        "donationAlert": "Az átutalás végrehajtása előtt a következőket kell tennie <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'>eredeti tweet<a/> másolja a címet a tárcából. Ne bízzon más pénztárcák információiban.",
+        "donationTotalAlert": "Az itt feltüntetett USD és TRY egyenértékek a teljes becsült értéket mutatják összesen 3 pénztárcacímen. A TRY értéket úgy kapjuk meg, hogy az USD-ben megadott értéket közvetlenül az aktuális árfolyamon számoljuk át. Az itt szereplő értékek 30 másodpercenként frissülnek, ezért előfordulhat, hogy a legfrissebb adatokhoz frissítenie kell az oldalt.<br/><br/>Ha részletesebb információkra van szüksége az összegyűjtött teljes összegről, akkor azt valós időben követheti a Nansenen keresztül: <a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
+        "balance": "Egyensúly",
+        "bnbValue": "BNB érték",
+        "thingsToConsider": "Az áthelyezéskor figyelembe veendő dolgok",
+        "cryptoNetwork": "{{crypto}} Hálózat",
+        "cryptoNetworkWarning": "Minden érme támogatott, de küldéskor válassza a BEP20 hálózatot.",
+        "whichAddress": "Melyik címre mennyit adományoztak?",
+        "pagination": "{{page}}/{{totalPage}}"
+      }
+    },
+    "cz": {
+      "translation": {
+        "title": "Tureckem otřásají silná zemětřesení. Zřítilo se 10 000 budov. Pod zemětřesením je 50 000 lidí. Na pomoc čeká 13 milionů lidí. Pomoc můžete poslat prostřednictvím následujících adres kryptopeněženky.",
+        "subTitle": "Dobrý den, prostřednictvím Ahbapu vybíráme krypto-dary na pomoc při katastrofě způsobené zemětřesením v Turecku. Níže uvedené adresy můžeme použít k podpoře tohoto daru kryptoměnou.",
+        "totalDonation": "Výše vybraných darů",
+        "donationAdresses": "Kryptografické adresy, které můžete darovat",
+        "donationAlert": "Transferi gerçekleştirmeden önce, mutlaka <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'>orjinal tweet<a/> üzerinden adresi kopyalayın. Başka cüzdan bilgilerine güvenmeyin.",
+        "donationTotalAlert": "Zde uvedené ekvivalenty v USD a TRY ukazují celkovou odhadovanou hodnotu na celkem 3 adresách peněženek. Hodnota v TRY se získá přímým přepočtem hodnoty v USD podle aktuálního směnného kurzu. Hodnoty jsou zde aktualizovány každých 30 sekund, pro získání nejnovějších údajů bude možná nutné stránku obnovit.<br/><br/>Pokud chcete znát podrobnější informace o celkové vybrané částce, můžete ji sledovat v reálném čase prostřednictvím aplikace Nansen.: <a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
+        "balance": "Bilance",
+        "bnbValue": "Hodnota BNB",
+        "thingsToConsider": "Co je třeba vzít v úvahu při převodu",
+        "cryptoNetwork": "{{crypto}} Síť",
+        "cryptoNetworkWarning": "Podporovány jsou všechny mince, ale při odesílání vyberte síť BEP20.",
+        "whichAddress": "Kolik bylo darováno na jakou adresu?",
+        "pagination": "{{page}}/{{totalPage}}"
+      }
+    },
+    "jp": {
+      "translation": {
+        "title": "トルコが大地震に見舞われている。1万棟のビルが倒壊した。震災の被害者は5万人です。1300万人が助けを待っている。以下の暗号ウォレットアドレスで支援金を送ることができます。",
+        "subTitle": "こんにちは、私たちはトルコの地震災害を支援するため、Ahbapを通じて暗号による寄付を募っています。この寄付を暗号通貨で支援するために、以下のアドレスを利用することができます。",
+        "totalDonation": "寄付金収集額",
+        "donationAdresses": "寄付できる暗号アドレス",
+        "donationAlert": "転送を行う前に、必ず<a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'>元のツイート<a/>からアドレスをコピーしてください。他の財布の情報は信用しないでください。",
+        "donationTotalAlert": "ここに表示されているUSDおよびTRY相当額は、合計3つのウォレットアドレスにおける推定値の合計を表しています。TRYの値は、USDでの値を現在の為替レートに直接換算して求めています。ここでの値は30秒ごとに更新されます。最新のデータを得るには、ページを更新する必要があるかもしれません。<br/><br/>より詳しい収集総量の情報を知りたい場合は、ナンセンを使ってリアルタイムに追うことができます。<a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
+        "balance": "バランス",
+        "bnbValue": "BNBバリュー",
+        "thingsToConsider": "乗り換えの際の注意点",
+        "cryptoNetwork": "{{crypto}} ネットワーク",
+        "cryptoNetworkWarning": "すべてのコインに対応していますが、送信時はBEP20ネットワークを選択してください.",
+        "whichAddress": "どの住所にいくら寄付されたのですか？",
+        "pagination": "{{page}}/{{totalPage}}"
+      }
+    },
+    "cn": {
+      "translation": {
+        "title": "土耳其正在受到大规模地震的震动。10,000座建筑物已经倒塌。有50,000人在地震中。1300万人正在等待帮助。你可以通过以下加密货币钱包地址发送你的援助。",
+        "subTitle": "你好，我们正在通过Ahabap收集加密货币捐款，以帮助土耳其的地震灾害。我们可以使用下面的地址，用加密货币支持这项捐赠。",
+        "totalDonation": "收集到的捐款数额",
+        "donationAdresses": "你可以捐赠的加密货币地址",
+        "donationAlert": "在进行转移之前，一定要从<a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'>原始鸣叫<a/>中复制地址。不要相信其他钱包的信息。",
+        "donationTotalAlert": "这里显示的美元和特立尼达和多巴哥的等价物显示了总共3个钱包地址的总估计值。特立尼达和多巴哥的价值是通过将美元的价值直接转换为当前的汇率而得到的。这里的数值每30秒更新一次，你可能需要刷新页面以获得最新数据。<br/><br/>如果你想获得更详细的收集总量信息，你可以通过南森实时关注。<a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
+        "balance": "平衡",
+        "bnbValue": "BNB价值",
+        "thingsToConsider": "转移时需要考虑的事项",
+        "cryptoNetwork": "{{crypto}} 网络",
+        "cryptoNetworkWarning": "所有硬币都支持，但发送时要选择BEP20网络。",
+        "whichAddress": "向哪个地址捐赠了多少钱?",
+        "pagination": "{{page}}/{{totalPage}}"
+      }
+    },
+    "gr": {
+      "translation": {
+        "title": "Η Τουρκία συγκλονίζεται από ισχυρούς σεισμούς. 10.000 κτίρια έχουν καταρρεύσει. Υπάρχουν 50.000 άνθρωποι κάτω από το σεισμό. 13 εκατομμύρια άνθρωποι περιμένουν βοήθεια. Μπορείτε να στείλετε τη βοήθειά σας μέσω των ακόλουθων διευθύνσεων κρυπτογραφικού πορτοφολιού.",
+        "subTitle": "Γεια σας, συλλέγουμε δωρεές κρυπτογράφησης μέσω του Ahbap για να βοηθήσουμε την καταστροφή από τον σεισμό στην Τουρκία. Μπορούμε να χρησιμοποιήσουμε τις παρακάτω διευθύνσεις για να υποστηρίξουμε αυτή τη δωρεά με κρυπτονόμισμα.",
+        "totalDonation": "Ποσό των δωρεών που συγκεντρώθηκαν",
+        "donationAdresses": "Διευθύνσεις κρυπτογράφησης που μπορείτε να δωρίσετε",
+        "donationAlert": "Πριν κάνετε τη μεταφορά, αντιγράφετε πάντα τη διεύθυνση από το <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'>πρωτότυπο tweet<a/>. Μην εμπιστεύεστε τις πληροφορίες άλλων πορτοφολιών.",
+        "donationTotalAlert": "Τα ισοδύναμα USD και TRY που αναφέρονται εδώ δείχνουν τη συνολική εκτιμώμενη αξία σε συνολικά 3 διευθύνσεις πορτοφολιού. Η αξία TRY προκύπτει από την άμεση μετατροπή της αξίας σε USD με την τρέχουσα συναλλαγματική ισοτιμία. Οι τιμές εδώ ενημερώνονται κάθε 30 δευτερόλεπτα, ίσως χρειαστεί να ανανεώσετε τη σελίδα για να λάβετε τα πιο πρόσφατα δεδομένα.<br/><br/>Αν θέλετε πιο λεπτομερείς πληροφορίες σχετικά με το συνολικό ποσό που έχει συγκεντρωθεί, μπορείτε να το παρακολουθείτε σε πραγματικό χρόνο μέσω του Nansen: <a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
+        "balance": "Υπόλοιπο",
+        "bnbValue": "Αξία BNB",
+        "thingsToConsider": "Πράγματα που πρέπει να λάβετε υπόψη κατά τη μεταφορά",
+        "cryptoNetwork": "Δίκτυο {{crypto}} ",
+        "cryptoNetworkWarning": "Υποστηρίζονται όλα τα νομίσματα, αλλά επιλέξτε το δίκτυο BEP20 κατά την αποστολή.",
+        "whichAddress": "Πόσα δόθηκαν σε ποια διεύθυνση?",
+        "pagination": "{{page}}/{{totalPage}}"
+      }
+    },
+    "it": {
+      "translation": {
+        "title": "La Turchia è colpita da terremoti distruttivi. 10.000 edifici sono crollati. Ci sono 50.000 persone sotto le macerie. 13 milioni di persone sono in attesa di aiuto. Potete inviare il vostro aiuto tramite i seguenti indirizzi di portafogli di criptovalute",
+        "subTitle": "Salve, stiamo raccogliendo donazioni in criptovaluta attraverso Ahbap per aiutare le vittime del terremoto in Turchia. Potete utilizzare gli indirizzi sottostanti per donare criptovalute a sostegno di questa causa",
+        "totalDonation": "Importo totale della donazione",
+        "donationAdresses": "Indirizzi di criptovaluta che si possono donare",
+        "donationAlert": "Prima di effettuare il trasferimento, copiate sempre l'indirizzo dal <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504! target='_blank'>tweet originale<a/>. Non fidatevi delle informazioni di altri portafogli.",
+        "donationTotalAlert": "Gli equivalenti in USD e TRY qui indicati mostrano il valore totale stimato su un totale di 3 indirizzi di portafoglio. Il valore in TRY si ottiene convertendo direttamente il valore in USD in base al tasso di cambio corrente. I valori vengono aggiornati ogni 30 secondi; potrebbe essere necessario aggiornare la pagina per ottenere i dati più recenti.<br/><br/>Se volete informazioni più dettagliate sull'importo totale raccolto, potete seguirlo in tempo reale tramite Nansen: <a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
+        "balance": "Equilibrio",
+        "bnbValue": "Valore BNB",
+        "thingsToConsider": "Cose da considerare quando si effettua un trasferimento",
+        "cryptoNetwork": "{{crypto}} Rete",
+        "cryptoNetworkWarning": "Tutte le monete sono supportate, ma selezionare la rete BEP20 durante l'invio",
+        "whichAddress": "Quanto è stato donato a quale indirizzo?",
+        "pagination": "{{page}}/{{totalPage}}"
+      }
+    },
+    "fi": {
+      "translation": {
+        "title": "Turkkia ravistelevat valtavat maanjäristykset. 10 000 rakennusta on romahtanut. Maanjäristyksen alla on 50 000 ihmistä. 13 miljoonaa ihmistä odottaa apua. Voit lähettää tukesi seuraavien kryptolompakko-osoitteiden kautta.",
+        "subTitle": "Hei, keräämme Ahbapin kautta kryptolahjoituksia Turkin maanjäristyskatastrofin auttamiseksi. Voimme käyttää alla olevia osoitteita tämän lahjoituksen tukemiseen kryptovaluutalla.",
+        "totalDonation": "Kerättyjen Lahjoitusten Määrä",
+        "donationAdresses": "Krypto-osoitteet, Joita Voit Lahjoittaa",
+        "donationAlert": "Kopioi aina ennen siirtoa osoite <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'>alkuperäisestä twiitistä<a/>. Älä luota muiden lompakoiden tietoihin.",
+        "donationTotalAlert": "Tässä ilmoitetut USD- ja TRY-vastikkeet näyttävät arvioidut kokonaisarvot 3 lompakkoosoitteessa. TRY-arvo saadaan muuntamalla USD-arvo suoraan nykyiseen valuuttakurssiin. Arvot päivitetään 30 sekunnin välein, joten sinun on ehkä päivitettävä sivu saadaksesi uusimmat tiedot.<br/><br/>Jos haluat lisätietoja kerätystä kokonaissummasta, voit seurata sitä reaaliajassa Nansenissa: <a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
+        "balance": "Saldo",
+        "bnbValue": "BNB-arvo",
+        "thingsToConsider": "Ota huomioon siirtoa tehdessäsi",
+        "cryptoNetwork": "{{crypto}} Verkko",
+        "cryptoNetworkWarning": "Kaikki kolikot ovat tuettuja, mutta valitse lähetettäessä BEP20-verkko.",
+        "whichAddress": "Kuinka paljon mihin osoitteeseen lahjoitettiin?",
+        "pagination": "{{page}}/{{totalPage}}"
+      }
+    },
+    "ua": {
+      "translation": {
+        "title": "Туреччину стрясають потужні землетруси. 10 000 будівель зруйновано. Під землетрусом перебувають 50 000 людей. 13 мільйонів людей чекають на допомогу. Ви можете надіслати допомогу на наступні адреси криптогаманців.",
+        "subTitle": "Доброго дня, ми збираємо криптовалютні пожертви через Ahbap, щоб допомогти постраждалим від землетрусу в Туреччині. Підтримати цю пожертву криптовалютою можна за вказаними нижче адресами.",
+        "totalDonation": "Сума зібраних пожертв",
+        "donationAdresses": "Криптоадреси, які ви можете пожертвувати",
+        "donationAlert": "Перед здійсненням переказу необхідно <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'>orjinal tweet<a/> скопіюйте адресу з гаманця. Не довіряйте іншій інформації про гаманець.",
+        "donationTotalAlert": "Зазначені тут еквіваленти в доларах США і TRY показують загальну оціночну вартість за 3 адресами гаманців. Значення TRY отримується шляхом прямого перерахунку вартості в доларах США за поточним обмінним курсом. Значення тут оновлюються кожні 30 секунд, можливо, вам доведеться оновити сторінку, щоб отримати найсвіжіші дані.<br/><br/>Якщо ви хочете отримати більш детальну інформацію про загальну суму зібраних коштів, ви можете стежити за нею в режимі реального часу через Nansen: <a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
+        "balance": "Баланс",
+        "bnbValue": "Значення BNB",
+        "thingsToConsider": "Що потрібно враховувати при переведенні",
+        "cryptoNetwork": "{{crypto}} Мережа",
+        "cryptoNetworkWarning": "Підтримуються всі монети, але при надсиланні оберіть мережу BEP20.",
+        "whichAddress": "Скільки коштів було пожертвувано на яку адресу?",
+        "pagination": "{{page}}/{{totalPage}}"
+      }
+    },
+    "en": {
+      "translation": {
+        "title": "Turkey has been hit hard by a series of earthquakes. 10,000 buildings have been destroyed and 50,000 people are trapped beneath the rubble. 13 million people are in need of assistance. If you would like to help, you can donate through the following crypto wallet address.",
+        "subTitle": "We are collecting cryptocurrency donations to support the earthquake relief efforts in Turkey. If you would like to contribute, please use one of the following addresses. Thank you for your generosity!.",
+        "totalDonation": "Amount of Donations Collected",
+        "donationAdresses": "Crypto Addresses You Can Donate To",
+        "donationAlert": "Before making the transfer, always copy the address from the <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'>original tweet<a/>. Do not trust other wallet information.",
+        "donationTotalAlert": "The USD and TRY values shown here are the combined estimated value of all 3 wallet addresses. The TRY value is calculated by converting the USD value to the current exchange rate. These values are updated every 30 seconds, so you may need to refresh the page to get the latest information..<br/><br/>If you're interested in keeping track of the total amount collected, you can follow it in real time on Nansen.<a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
+        "balance": "balance",
+        "bnbValue": "BNB Value",
+        "thingsToConsider": "Things to Consider When Transferring",
+        "cryptoNetwork": "{{crypto}} Network",
+        "cryptoNetworkWarning": "All coins are supported but select the BEP20 network when sending.",
+        "whichAddress": "How much was donated to which address?",
+        "pagination": "{{page}}/{{totalPage}}"
+      }
+    },
+    "es": {
+      "translation": {
+        "title": "Turquía está siendo sacudida por enormes terremotos. Se han derrumbado 10.000 edificios. Hay 50.000 personas bajo el terremoto. 13 millones de personas esperan ayuda. Puede enviar su ayuda a través de las siguientes direcciones de monederos criptográficos.",
+        "subTitle": "Hola, estamos recogiendo cripto donaciones a través de Ahbap para ayudar al desastre del terremoto en Turquía. Podemos utilizar las direcciones que figuran a continuación para apoyar esta donación con criptomoneda.",
+        "totalDonation": "Importe de las donaciones recaudadas",
+        "donationAdresses": "Direcciones criptográficas que puede donar",
+        "donationAlert": "Antes de realizar la transferencia, debe<a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'>orjinal tweet<a/> copiar la dirección de la cartera. No te fíes de la información de otras carteras.",
+        "donationTotalAlert": "Los equivalentes en USD y TRY aquí indicados muestran el valor total estimado en un total de 3 direcciones de monedero. El valor en TRY se obtiene convirtiendo directamente el valor en USD al tipo de cambio actual. Los valores se actualizan cada 30 segundos, por lo que puede ser necesario actualizar la página para obtener los datos más recientes.<br/><br/>Si quieres información más detallada sobre la cantidad total recaudada, puedes seguirla en tiempo real a través de Nansen: <a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
+        "balance": "Saldo",
+        "bnbValue": "Valor BNB",
+        "thingsToConsider": "Aspectos a tener en cuenta al hacer una transferencia",
+        "cryptoNetwork": "{{crypto}} Red",
+        "cryptoNetworkWarning": "Se admiten todas las monedas, pero selecciona la red BEP20 al enviar.",
+        "whichAddress": "¿Cuánto se donó y a qué dirección?",
+        "pagination": "{{page}}/{{totalPage}}"
+      }
+    },
+    "lv": {
+      "translation": {
+        "title": "Turkiją smarkiai sukrėtė keli žemės drebėjimai. Sugriauta 10 000 pastatų, o 50 000 žmonių įstrigo po griuvėsiais. Pagalbos reikia 13 mln. žmonių. Jei norite padėti, galite paaukoti per šią kriptovaliutų piniginės adresą.",
+        "subTitle": "Renkame kriptovaliutų aukas žemės drebėjimo Turkijoje padariniams likviduoti. Jei norite prisidėti, naudokite vieną iš šių adresų. Dėkojame už jūsų dosnumą!",
+        "totalDonation": "Surinktų aukų suma",
+        "donationAdresses": "Kriptovaliutų adresai, kuriems galite aukoti",
+        "donationAlert": "Prieš atlikdami perkėlimą, visada nukopijuokite adresą iš <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'>originalus tweet'as<a/>. Nepasitikėkite kitų piniginių informacija.",
+        "donationTotalAlert": "Čia nurodytos USD ir TRY vertės yra bendra apskaičiuota visų 3 piniginių adresų vertė. TRY vertė apskaičiuojama konvertuojant USD vertę pagal dabartinį valiutos kursą. Šios vertės atnaujinamos kas 30 sekundžių, todėl norint gauti naujausią informaciją gali tekti atnaujinti puslapį.<br/><br/>Jei norite sekti visą surinktą sumą, galite tai stebėti realiuoju laiku Nanseno svetainėje.<a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
+        "balance": "Balansas",
+        "bnbValue": "BNB vertė",
+        "thingsToConsider": "Dalykai, į kuriuos reikia atsižvelgti perkeliant",
+        "cryptoNetwork": "{{crypto}} Tinklas",
+        "cryptoNetworkWarning": "Palaikomos visos monetos, tačiau siųsdami pasirinkite BEP20 tinklą.",
+        "whichAddress": "Kiek ir kokiu adresu buvo paaukota?",
+        "pagination": "{{page}}/{{totalPage}}"
+      }
+    },
+    "fr": {
+      "translation": {
+        "title": "La Turquie est secouée par d'importants tremblements de terre. 10 000 bâtiments se sont effondrés. Il y a 50 000 personnes sous le tremblement de terre. 13 millions de personnes attendent de l'aide. Vous pouvez envoyer votre aide via les adresses de porte-monnaie cryptographiques suivantes.",
+        "subTitle": "Bonjour, nous collectons des dons en crypto-monnaies par le biais d'Ahbap pour aider la catastrophe du tremblement de terre en Turquie. Nous pouvons utiliser les adresses ci-dessous pour soutenir ce don en crypto-monnaie.",
+        "totalDonation": "Montant des dons collectés ",
+        "donationAdresses": "Adresses Crypto que vous pouvez donner",
+        "donationAlert": "Avant d'effectuer le transfert, copiez toujours l'adresse du <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'>tweet original. <a/>  Ne vous fiez pas aux informations des autres portefeuilles.",
+        "donationTotalAlert": " Les équivalents en USD et en TRY indiqués ici montrent la valeur totale estimée sur un total de 3 adresses de portefeuilles. La valeur en TRY est obtenue en convertissant directement la valeur en USD au taux de change actuel. Les valeurs ici sont mises à jour toutes les 30 secondes, vous devrez peut-être rafraîchir la page pour obtenir les dernières données.<br/><br/> Si vous souhaitez des informations plus détaillées sur le montant total collecté, vous pouvez le suivre en temps réel via Nansen : <a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
+        "balance": "balance",
+        "bnbValue": " Valeur de BNB",
+        "thingsToConsider": " Éléments à prendre en compte lors d'un transfert",
+        "cryptoNetwork": "{{crypto}} Réseau ",
+        "cryptoNetworkWarning": " Toutes les pièces sont acceptées, mais sélectionnez le réseau BEP20 lors de l'envoi.",
+        "whichAddress": "Quel montant a été donné à quelle adresse ?",
+        "pagination": "{{page}}/{{totalPage}}"
+      }
+    },
+    "ru": {
+      "translation": {
+        "title": "Турция сильно пострадала от серии землетрясений. 10 000 зданий были разрушены, 50 000 человек оказались под завалами. 13 миллионов человек нуждаются в помощи. Если вы хотите помочь, вы можете сделать пожертвование через следующий адрес криптокошелька.",
+        "subTitle": "Мы собираем криптовалютные пожертвования для поддержки усилий по ликвидации последствий землетрясения в Турции. Если вы хотите внести свой вклад, пожалуйста, используйте один из следующих адресов. Спасибо за вашу щедрость!.",
+        "totalDonation": "Сумма собранных пожертвований",
+        "donationAdresses": "Адреса криптовалют, на которые можно пожертвовать",
+        "donationAlert": "Перед переводом всегда копируйте адрес из <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'>оригинального твита</a/>. Не доверяйте информации о других кошельках.",
+        "donationTotalAlert": "Указанные здесь значения в долларах США и TRY представляют собой совокупную расчетную стоимость всех 3 адресов кошельков. Стоимость TRY рассчитывается путем конвертации стоимости USD в текущий обменный курс. Эти значения обновляются каждые 30 секунд, поэтому вам может понадобиться обновить страницу, чтобы получить самую свежую информацию..<br/><br/>Если вам интересно следить за общей собранной суммой, вы можете следить за ней в режиме реального времени на сайте Nansen. <a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
+        "balance": "Баланс",
+        "bnbValue": "Стоимость BNB",
+        "thingsToConsider": "Что нужно учитывать при переводе",
+        "cryptoNetwork": "{{crypto}} Сеть",
+        "cryptoNetworkWarning": "Поддерживаются все монеты, но при отправке выбирайте сеть BEP20.",
+        "whichAddress": "Какая сумма была пожертвована по какому адресу?",
+        "pagination": "{{page}}/{{totalPage}}"
+      }
+    },
+    "no": {
+      "translation": {
+        "title": "Tyrkia er rammet av ødeleggende jordskjelv. 10 000 bygninger har kollapset. 50 000 mennesker ligger under ruinene. 13 millioner mennesker venter på hjelp. Du kan sende din hjelp via følgende kryptovaluta-lommebokadresser.",
+        "subTitle": "Hei, vi samler inn kryptodonasjoner gjennom Ahbap for å hjelpe jordskjelvofre i Tyrkia. Du kan bruke adressene nedenfor til å donere kryptovaluta for å støtte denne saken.",
+        "totalDonation": "Samlet donasjonsbeløp",
+        "donationAdresses": "Kryptoadresser du kan donere",
+        "donationAlert": "Før du overfører, må du alltid kopiere adressen fra <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504! target='_blank'>den opprinnelige tweeten<a/>. Ikke stol på annen lommebokinformasjon.",
+        "donationTotalAlert": "USD- og TRY-ekvivalentene som er angitt her, viser den totale estimerte verdien på 3 lommebokadresser totalt. TRY-verdien oppnås ved direkte omregning av verdien i USD i henhold til gjeldende valutakurs. Verdiene her oppdateres hvert 30. sekund, det kan hende du må oppdatere siden for å få de nyeste dataene.<br/><br/>Hvis du vil ha mer detaljert informasjon om det totale innsamlede beløpet, kan du følge det i sanntid via Nansen: <a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
+        "balance": "Balanse",
+        "bnbValue": "BNB-verdi",
+        "thingsToConsider": "Ting du bør tenke på når du foretar en overføring",
+        "cryptoNetwork": "{{crypto}} Nettverk",
+        "cryptoNetworkWarning": "Alle mynter støttes, men velg BEP20-nettverk når du sender.",
+        "whichAddress": "Hvor mye ble donert til hvilken adresse?",
+        "pagination": "{{page}}/{{totalPage}}"
+      }
+    },
+    "bg": {
+      "translation": {
+        "title": "Турция е разтърсвана от силни земетресения. 10 000 сгради са се срутили. Под въздействието на земетресението попадат 50 000 души. 13 милиона души чакат помощ. Можете да изпратите помощта си чрез следните адреси на портфейла на криптопара.",
+        "subTitle": "Здравейте, събираме крипто дарения чрез Ahbap, за да помогнем на пострадалите от земетресението в Турция. Можем да използваме следните адреси, за да подкрепим това дарение с криптовалути.",
+        "totalDonation": "Размер на събраните дарения",
+        "donationAdresses": "Крипто адреси, които можете да дарите",
+        "donationAlert": "Преди да извършите прехвърлянето, винаги копирайте адреса от <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'>оригиналния туит<a/>. Не се доверявайте на информация от други портфейли.",
+        "donationTotalAlert": "Посочените тук еквиваленти на USD и TRY показват общата прогнозна стойност на общо 3 адреса на портфейли. Стойността в TRY се получава чрез директно преобразуване на стойността в USD по текущия обменен курс. Стойностите тук се актуализират на всеки 30 секунди, затова може да се наложи да опресните страницата, за да получите най-новите данни. Ако искате да получите по-подробна информация за общата събрана сума, можете да я следите в реално време чрез Nansen <a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
+        "balance": "Баланс",
+        "bnbValue": "Стойност на БНБ",
+        "thingsToConsider": "Какво да вземете предвид при прехвърляне",
+        "cryptoNetwork": "{{crypto}} мрежа",
+        "cryptoNetworkWarning": "Поддържат се всички монети, но при изпращане изберете мрежата BEP20.",
+        "whichAddress": "Каква сума е била дарена на кой адрес?",
+        "pagination": "{{page}}/{{totalPage}}"
+      }
+    },
+    "ro": {
+      "translation": {
+        "title": "Turcia a fost grav afectată de o serie de cutremure. 10.000 de clădiri au fost distruse, iar 50.000 de persoane sunt prinse sub dărâmături. 13 milioane de persoane au nevoie de asistență. Dacă doriți să ajutați, puteți dona prin intermediul următoarei adrese de portofel criptografic.",
+        "subTitle": "Colectăm donații în criptomonede pentru a sprijini eforturile de ajutorare a victimelor cutremurului din Turcia. Dacă doriți să contribuiți, vă rugăm să folosiți una dintre următoarele adrese. Vă mulțumim pentru generozitatea dumneavoastră!.",
+        "totalDonation": "Suma donațiilor colectate",
+        "donationAdresses": "Adrese criptografice la care puteți dona",
+        "donationAlert": "Înainte de a face transferul, copiați întotdeauna adresa din <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'> tweet-ul original<a/>. Nu vă încredeți în alte informații din portofel.",
+        "donationTotalAlert": "Valorile în USD și TRY afișate aici reprezintă valoarea estimată combinată a tuturor celor 3 adrese de portofel. Valoarea în TRY este calculată prin conversia valorii în USD la cursul de schimb actual. Aceste valori sunt actualizate la fiecare 30 de secunde, așa că este posibil să fie nevoie să reîmprospătați pagina pentru a obține cele mai recente informații..<br/><br/>Dacă sunteți interesat să urmăriți suma totală colectată, o puteți urmări în timp real pe Nansen.<a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
+        "balance": "Balanță",
+        "bnbValue": "Valoarea BNB",
+        "thingsToConsider": "Lucruri de luat în considerare la transfer",
+        "cryptoNetwork": "{{crypto}} Rețea",
+        "cryptoNetworkWarning": "Toate monedele sunt acceptate, dar selectați rețeaua BEP20 atunci când trimiteți.",
+        "whichAddress": "Cât de mult a fost donat la ce adresă?",
+        "pagination": "{{page}}/{{totalPage}}"
+      }
+    },
+    "sk": {
+      "translation": {
+        "title": "Turecko ťažko zasiahla séria zemetrasení. Zničených bolo 10 000 budov a 50 000 ľudí je uväznených pod troskami. Pomoc potrebuje 13 miliónov ľudí. Ak chcete pomôcť, môžete prispieť prostredníctvom nasledujúcej adresy kryptopeňaženky.",
+        "subTitle": "Zbierame dary v kryptomenách na podporu pomoci pri zemetrasení v Turecku. Ak chcete prispieť, použite jednu z nasledujúcich adries. Ďakujeme za vašu štedrosť!.",
+        "totalDonation": "Výška vyzbieraných darov",
+        "donationAdresses": "Kryptografické adresy, na ktoré môžete prispieť",
+        "donationAlert": "Pred uskutočnením prenosu vždy skopírujte adresu z <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'>pôvodný tweet<a/>. Nedôverujte informáciám z iných peňaženiek.",
+        "donationTotalAlert": "Tu uvedené hodnoty USD a TRY sú kombinovanou odhadovanou hodnotou všetkých 3 adries peňaženiek. Hodnota TRY sa vypočíta prepočtom hodnoty USD na aktuálny výmenný kurz. Tieto hodnoty sa aktualizujú každých 30 sekúnd, takže možno budete musieť obnoviť stránku, aby ste získali najnovšie informácie.<br/><br/>Ak máte záujem sledovať celkovú vyzbieranú sumu, môžete ju sledovať v reálnom čase na stránke Nansen.<a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
+        "balance": "Bilancia",
+        "bnbValue": "Hodnota BNB",
+        "thingsToConsider": "Čo treba zvážiť pri presune",
+        "cryptoNetwork": "{{crypto}} Sieť",
+        "cryptoNetworkWarning": "Podporované sú všetky mince, ale pri odosielaní vyberte sieť BEP20.",
+        "whichAddress": "Koľko bolo darovaných na ktorú adresu?",
+        "pagination": "{{page}}/{{totalPage}}"
+      }
+    },
+    "kr": {
+      "translation": {
+        "title": "터키는 연이은 지진으로 큰 피해를 입었습니다. 10,000채의 건물이 파괴되었고 50,000명의 사람들이 잔해 아래에 갇혀 있습니다. 1,300만 명의 사람들이 도움이 필요합니다. 도움을 주고 싶으시다면 다음 암호화폐 지갑 주소를 통해 기부하실 수 있습니다.",
+        "subTitle": "트위터에서는 터키 지진 구호 활동을 지원하기 위해 암호화폐 기부금을 모금하고 있습니다. 기부를 원하시면 다음 주소 중 하나를 이용해 주시기 바랍니다. 여러분의 관대함에 감사드립니다!",
+        "totalDonation": "모금된 기부금 금액",
+        "donationAdresses": "기부할 수 있는 암호화폐 주소",
+        "donationAlert": "송금하기 전에 항상 원본 트윗의 주소를 복사하세요. <a class='text-brand font-middle hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'>원본 트윗<a/>에서 주소를 복사하세요. 다른 지갑 정보를 신뢰하지 마세요.",
+        "donationTotalAlert": "여기에 표시된 USD 및 TRY 값은 3개 지갑 주소의 예상 가치를 모두 합산한 것입니다. TRY 값은 USD 값을 현재 환율로 변환하여 계산됩니다. 이 값은 30초마다 업데이트되므로 최신 정보를 확인하려면 페이지를 새로고침해야 할 수 있습니다.<br/><br/>총 모금액을 추적하고 싶으시다면 난센에서 실시간으로 확인할 수 있습니다.<a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
+        "balance": "잔액",
+        "bnbValue": "BNB 가치",
+        "thingsToConsider": "이전할 때 고려해야 할 사항",
+        "cryptoNetwork": "{{crypto}} 네트워크",
+        "cryptoNetworkWarning": "모든 코인이 지원되지만 송금 시 BEP20 네트워크를 선택하세요.",
+        "whichAddress": "어느 주소로 얼마를 기부했나요?",
+        "pagination": "{{page}}/{{totalPage}}"
+      }
+    },
+    "pl": {
+      "translation": {
+        "title": "Turcją wstrząsają potężne trzęsienia ziemi. Zawaliło się 10 tysięcy budynków. Pod trzęsieniem ziemi znajduje się 50 tysięcy osób. 13 milionów ludzi czeka na pomoc. Pomoc można wysłać za pośrednictwem następujących adresów portfeli kryptowalutowych.",
+        "subTitle": "Witaj, zbieramy darowizny kryptowalutowe za pośrednictwem Ahbap, aby pomóc katastrofie trzęsienia ziemi w Turcji. Do wsparcia tej darowizny kryptowalutą możemy użyć następujących adresów.",
+        "totalDonation": "Kwota zebranych darowizn",
+        "donationAdresses": "Adresy kryptowalut, które możesz przekazać",
+        "donationAlert": "Przed przeniesieniem zawsze należy skopiować adres z <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'>oryginalnego tweet<a/> Nie ufaj innym danym z portfela.",
+        "donationTotalAlert": "Podane tutaj ekwiwalenty USD i TRY pokazują całkowitą szacunkową wartość na 3 adresach portfeli łącznie. Wartość TRY jest bezpośrednim przeliczeniem wartości USD po aktualnym kursie. Wartości tutaj są aktualizowane co 30 sekund, może być konieczne odświeżenie strony, aby uzyskać najnowsze dane.<br/><br/>Jeśli chcesz poznać bardziej szczegółowe informacje na temat całkowitej zebranej kwoty, możesz śledzić ją w czasie rzeczywistym za pośrednictwem Nansen: <a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
+        "balance": "Saldo",
+        "bnbValue": "Wartość BNB",
+        "thingsToConsider": "Rzeczy do rozważenia przy przenoszeniu",
+        "cryptoNetwork": "{{crypto}} sieć",
+        "cryptoNetworkWarning": "Wszystkie kryptowaluty są obsługiwane, ale przy wysyłaniu wybierz sieć BEP20.",
+        "whichAddress": "Jaka kwota została przekazana na jaki adres?",
+        "pagination": "{{page}}/{{totalPage}}"
+      }
+    },
+    "pt": {
+      "translation": {
+        "title": "A Turquia está sendo abalada por terremotos maciços. 10.000 edifícios desmoronaram. Há 50.000 pessoas sob o terremoto. 13 milhões de pessoas estão esperando por ajuda. Você pode enviar seu auxílio através dos seguintes endereços de carteira criptográfica.",
+        "subTitle": "Olá, estamos coletando doações criptográficas através da Ahbap para ajudar no desastre do terremoto na Turquia. Podemos usar os endereços abaixo para apoiar esta doação com moeda criptográfica.",
+        "totalDonation": "Valor das Doações Coletadas",
+        "donationAdresses": "Endereços Criptográficos Que Podem Ser Doados",
+        "donationAlert": "Antes de fazer a transferência, sempre copie o endereço da <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'>original tweet<a/>. Não confie em outras informações de carteira.",
+        "donationTotalAlert": "Os equivalentes em USD e TRY indicados aqui mostram o valor total estimado em 3 endereços de carteira. O valor TRY é obtido convertendo diretamente o valor em USD para a taxa de câmbio atual. Os valores aqui são atualizados a cada 30 segundos, pode ser necessário atualizar a página para obter os dados mais recentes.<br/><br/>Se você quiser saber mais sobre o valor total arrecadado, pode acompanhar em tempo real no Nansen: <a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
+        "balance": "Saldo",
+        "bnbValue": "Valor BNB",
+        "thingsToConsider": "Coisas A Considerar Na Transferência",
+        "cryptoNetwork": "Rede {{crypto}}",
+        "cryptoNetworkWarning": "Todas as moedas são suportadas, mas selecione a rede BEP20 ao enviar.",
+        "whichAddress": "Quanto foi doado para qual endereço?",
+        "pagination": "{{page}}/{{totalPage}}"
+      }
+    },
+    "ee": {
+      "translation": {
+        "title": "Türgit on rängalt tabanud rida maavärinaid. 10 000 hoonet on hävinud ja 50 000 inimest on jäänud rusude alla. Abi vajab 13 miljonit inimest. Kui soovite aidata, saate annetada järgmise krüptokoti aadressi kaudu.",
+        "subTitle": "Me kogume krüptoraha annetusi, et toetada maavärina abiprogramme Türgis. Kui soovite anda oma panuse, kasutage palun ühte järgmistest aadressidest. Täname teid suuremeelsuse eest!",
+        "totalDonation": "Kogutud annetuste summa",
+        "donationAdresses": "Krüpto aadressid, millele saate annetada",
+        "donationAlert": "Enne ülekande tegemist kopeerige alati aadress <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'>algne säuts<a/>. Ärge usaldage teiste rahakoti teavet.",
+        "donationTotalAlert": "Siin näidatud USD ja TRY väärtused on kõigi 3 rahakoti aadressi hinnanguline koguväärtus. TRY väärtus on arvutatud USD väärtuse ümberarvestamisel praeguse vahetuskursi alusel. Neid väärtusi uuendatakse iga 30 sekundi tagant, nii et viimaste andmete saamiseks võib olla vaja lehekülge värskendada..<br/><br/>Kui olete huvitatud kogutud kogusumma jälgimisest, saate seda reaalajas jälgida Nansenis.<a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
+        "balance": "Saldo",
+        "bnbValue": "BNB väärtus",
+        "thingsToConsider": "Asjad, mida ülekandmisel arvesse võtta",
+        "cryptoNetwork": "{{crypto}} Võrk",
+        "cryptoNetworkWarning": "Kõik mündid on toetatud, kuid valige saatmisel BEP20 võrk.",
+        "whichAddress": "Kui palju annetati millisele aadressile?",
+        "pagination": "{{page}}/{{totalPage}}"
+      }
+    },
+    "de": {
+      "translation": {
+        "title": "Die Türkei wird von schweren Erdbeben erschüttert. 10.000 Gebäude sind zusammengebrochen. 50.000 Menschen sind von dem Erdbeben betroffen. 13 Millionen Menschen warten auf Hilfe. Sie können Ihre Hilfe über die folgenden Krypto-Wallet-Adressen senden.",
+        "subTitle": "Hallo, wir sammeln Krypto-Spenden über Ahbap, um der Erdbebenkatastrophe in der Türkei zu helfen. Wir können die unten stehenden Adressen verwenden, um diese Spende mit Kryptowährung zu unterstützen.",
+        "totalDonation": "Höhe der gesammelten Spendengelder",
+        "donationAdresses": "Krypto-Adressen, die Sie spenden können",
+        "donationAlert": "Bevor Sie die Übertragung durchführen, müssen Sie <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'>orjinal tweet<a/> kopieren Sie die Adresse aus der Brieftasche. Vertrauen Sie nicht auf die Informationen anderer Geldbörsen.",
+        "donationTotalAlert": "Die hier angegebenen USD- und TRY-Äquivalente zeigen den geschätzten Gesamtwert auf insgesamt 3 Wallet-Adressen. Der Wert in TRY wird durch direkte Umrechnung des Wertes in USD zum aktuellen Wechselkurs ermittelt. Die Werte hier werden alle 30 Sekunden aktualisiert. Möglicherweise müssen Sie die Seite aktualisieren, um die neuesten Daten zu erhalten.<br/><br/>Wenn Sie genauere Informationen über den gesammelten Gesamtbetrag wünschen, können Sie diesen in Echtzeit über Nansen verfolgen: <a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
+        "balance": "Bilanz",
+        "bnbValue": "BNB-Wert",
+        "thingsToConsider": "Was Sie bei der Übertragung beachten sollten",
+        "cryptoNetwork": "{{crypto}} Netzwerk",
+        "cryptoNetworkWarning": "Alle Münzen werden unterstützt, aber wählen Sie beim Senden das BEP20-Netz.",
+        "whichAddress": "Wie viel wurde an welche Adresse gespendet?",
+        "pagination": "{{page}}/{{totalPage}}"
+      }
+    },
+    "lt": {
+      "translation": {
+        "title": "Turkiją smarkiai sukrėtė keli žemės drebėjimai. Sugriauta 10 000 pastatų, o 50 000 žmonių įstrigo po griuvėsiais. Pagalbos reikia 13 mln. žmonių. Jei norite padėti, galite paaukoti per šį kriptovaliutų piniginės adresą.",
+        "subTitle": "Renkame kriptovaliutų aukas žemės drebėjimo Turkijoje padariniams likviduoti. Jei norite prisidėti, naudokite vieną iš šių adresų. Dėkojame už jūsų dosnumą!.",
+        "totalDonation": "Surinktų aukų suma",
+        "donationAdresses": "Kriptovaliutų adresai, kuriems galite aukoti",
+        "donationAlert": "Prieš atlikdami perkėlimą visada nukopijuokite adresą iš <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'>originalaus tweet'o<a/>. Nepasitikėkite kitų piniginių informacija.",
+        "donationTotalAlert": "Čia nurodytos USD ir TRY vertės yra bendra apskaičiuota visų 3 piniginių adresų vertė. TRY vertė apskaičiuojama konvertuojant USD vertę pagal dabartinį valiutos kursą. Šios vertės atnaujinamos kas 30 sekundžių, todėl norint gauti naujausią informaciją gali tekti atnaujinti puslapį..<br/><br/>Jei norite sekti visą surinktą sumą, galite tai stebėti realiuoju laiku Nanseno svetainėje.<a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
+        "balance": "Balansas",
+        "bnbValue": "BNB vertė",
+        "thingsToConsider": "Dalykai, į kuriuos reikia atsižvelgti perkeliant",
+        "cryptoNetwork": "{{crypto}} Tinklas",
+        "cryptoNetworkWarning": "Palaikomos visos monetos, tačiau siųsdami pasirinkite BEP20 tinklą.",
+        "whichAddress": "Kiek ir kokiu adresu buvo paaukota?",
+        "pagination": "{{page}}/{{totalPage}}"
+      }
+    },
+    "dk": {
+      "translation": {
+        "title": "Tyrkiet er blevet hårdt ramt af en række jordskælv. 10.000 bygninger er blevet ødelagt, og 50.000 mennesker er fanget under murbrokkerne. 13 millioner mennesker har brug for hjælp. Hvis du gerne vil hjælpe, kan du donere via følgende krypto-tegnebogsadresse.",
+        "subTitle": "Vi indsamler donationer i kryptovaluta til støtte for jordskælvshjælpen i Tyrkiet. Hvis du ønsker at bidrage, bedes du bruge en af følgende adresser. Tak for din gavmildhed!",
+        "totalDonation": "Beløb af indsamlede donationer",
+        "donationAdresses": "Kryptoadresser, du kan donere til",
+        "donationAlert": "Før du foretager overførslen, skal du altid kopiere adressen fra den <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'> originale tweet<a/>. Stol ikke på andre tegnebogsoplysninger.",
+        "donationTotalAlert": "Værdierne i USD og TRY, der vises her, er den samlede anslåede værdi af alle 3 tegnebogsadresser. TRY-værdien er beregnet ved at omregne USD-værdien til den aktuelle valutakurs. Disse værdier opdateres hvert 30. sekund, så det kan være nødvendigt at opdatere siden for at få de seneste oplysninger.<br/><br/>Hvis du er interesseret i at holde øje med det samlede indsamlede beløb, kan du følge det i realtid på Nansen. <a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
+        "balance": "balance",
+        "bnbValue": "BNB-værdi",
+        "thingsToConsider": "Ting, du skal overveje, når du overfører",
+        "cryptoNetwork": "{{crypto}} Netværk",
+        "cryptoNetworkWarning": "Alle mønter er understøttet, men vælg BEP20-netværket, når du sender.",
+        "whichAddress": "Hvor meget blev doneret til hvilken adresse?",
+        "pagination": "{{page}}/{{totalPage}}"
+      }
+    },
+    "id": {
+      "translation": {
+        "title": "Turki telah dilanda serangkaian gempa bumi. 10.000 bangunan telah hancur dan 50.000 orang terjebak di bawah reruntuhan. 13 juta orang membutuhkan bantuan. Jika Anda ingin membantu, Anda dapat berdonasi melalui alamat dompet kripto berikut ini.",
+        "subTitle": "Kami mengumpulkan donasi mata uang kripto untuk mendukung upaya bantuan gempa bumi di Turki. Jika Anda ingin menyumbang, silakan gunakan salah satu alamat berikut. Terima kasih atas kemurahan hati Anda!",
+        "totalDonation": "Jumlah Donasi yang Terkumpul",
+        "donationAdresses": "Alamat Kripto yang Dapat Anda Donasikan",
+        "donationAlert": "Sebelum melakukan transfer, selalu salin alamat dari <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'>tweet asli<a/>. Jangan mempercayai informasi dompet lain.",
+        "donationTotalAlert": "Nilai USD dan TRY yang ditampilkan di sini adalah nilai estimasi gabungan dari ketiga alamat dompet. Nilai TRY dihitung dengan mengonversi nilai USD ke nilai tukar saat ini. Nilai-nilai ini diperbarui setiap 30 detik, jadi Anda mungkin perlu menyegarkan halaman untuk mendapatkan informasi terbaru.<br/><br/>Jika Anda tertarik untuk melacak jumlah total yang terkumpul, Anda bisa mengikutinya secara real time di Nansen.<a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
+        "balance": "Keseimbangan",
+        "bnbValue": "Nilai BNB",
+        "thingsToConsider": "Hal-hal yang Perlu Dipertimbangkan Saat Mentransfer",
+        "cryptoNetwork": "{{crypto}} Jaringan",
+        "cryptoNetworkWarning": "Semua koin didukung, tetapi pilih jaringan BEP20 saat mengirim.",
+        "whichAddress": "Berapa banyak yang disumbangkan ke alamat yang mana?",
+        "pagination": "{{page}}/{{totalPage}}"
+      }
+    },
+    "se": {
+      "translation": {
+        "title": "Turkiet har drabbats hårt av en rad jordbävningar. 10 000 byggnader har förstörts och 50 000 människor är instängda under spillrorna. 13 miljoner människor är i behov av hjälp. Om du vill hjälpa till kan du donera via följande kryptovalutaadress.",
+        "subTitle": "Vi samlar in donationer i kryptovaluta för att stödja jordbävningshjälpen i Turkiet. Om du vill bidra kan du använda någon av följande adresser. Tack för din generositet!.",
+        "totalDonation": "Beloppet av insamlade donationer",
+        "donationAdresses": "Kryptoadresser som du kan donera till",
+        "donationAlert": "Innan du gör överföringen ska du alltid kopiera adressen från den <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'><a/>. Lita inte på annan information från plånboken.",
+        "donationTotalAlert": "De värden i USD och TRY som visas här är det sammanlagda uppskattade värdet av alla tre plånboksadresser. TRY-värdet beräknas genom att konvertera USD-värdet till den aktuella växelkursen. Dessa värden uppdateras var 30:e sekund, så du kan behöva uppdatera sidan för att få den senaste informationen.<br/><br/>Om du är intresserad av att hålla koll på det totala insamlade beloppet kan du följa det i realtid på Nansen.<a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
+        "balance": "Balans",
+        "bnbValue": "BNB Värde",
+        "thingsToConsider": "Saker att tänka på vid överföringen",
+        "cryptoNetwork": "{{crypto}} Nätverk",
+        "cryptoNetworkWarning": "Alla mynt stöds, men välj BEP20-nätverket när du skickar.",
+        "whichAddress": "Hur mycket donerades till vilken adress?",
+        "pagination": "{{page}}/{{totalPage}}"
+      }
+    }
+  }
+}
