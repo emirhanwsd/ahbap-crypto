@@ -7,6 +7,7 @@ export const SYMBOL_NAMES = {
   USDC: "USD Coin",
   XRP: "XRP",
   BUSD: "Binance USD",
+  "BSC-USD": "Binance USD",
   ADA: "Cardano",
   DOGE: "Dogecoin",
   MATIC: "Polygon",
