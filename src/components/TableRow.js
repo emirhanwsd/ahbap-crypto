@@ -1,3 +1,5 @@
+import { SYMBOL_NAMES } from "../constants";
+
 const TableRow = (
   { chain, value, symbol, from_address, transaction_hash } // TODO: Name
 ) => (
@@ -6,14 +8,7 @@ const TableRow = (
       <img className="h-8 w-8" src={`/${chain}.svg`} alt="" />
 
       <div className="flex flex-col">
-        <a
-          className="text-neutral-500 underline truncate max-w-[250px]"
-          target="_blank"
-          rel="noreferrer"
-          href={`https://bscscan.com/tx/${transaction_hash}`}
-        >
-          {transaction_hash}
-        </a>
+        <span>{SYMBOL_NAMES[symbol]} ({symbol})</span>
         <span className="truncate max-w-[200px]">{from_address}</span>
       </div>
     </div>
