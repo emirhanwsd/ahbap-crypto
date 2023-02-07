@@ -3,7 +3,11 @@ module.exports = {
   darkMode: "class",
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        brand: "#568431",
+      },
+    },
   },
   plugins: [
     require("@tailwindcss/aspect-ratio"),
