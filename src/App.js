@@ -14,9 +14,8 @@ i18n.use(initReactI18next).init({
           "Hello, we are collecting crypto donations through Ahbap to help earthquake victims in Turkey. You can use the addresses below to donate cryptocurrency to support this cause.",
         totalDonation: "Total Amount of Donation",
         donationAdresses: "Bağış Yapabileceğiniz Kripto Adresleri",
-        donationAlert:
-          "Transferi gerçekleştirmeden önce, mutlaka orjinal tweet üzerinden adresi kopyalayın. Başka cüzdan bilgilerine güvenmeyin.",
-        donationTotalAlert: `Burada belirtilen USD ve TRY karşılıkları, toplamda 3 cüzdan adresi üzerindeki toplam tahmini değeri gösteriyor. TRY değeri, doğrudan USD'deki değerin güncel kura göre çevirimiyle elde ediliyor. Buradaki değerler her 30 saniyede bir güncelleniyor, son veriye ulaşmak için sayfayı yenilemeniz gerekebilir.<br/><br/>Toplamda toplanan tutar hakkında daha ayrıntılı bilgi edinmek istiyorsanız Nansen üzerinden gerçek zamanlı takip edebilirsiniz: <a class="text-brand font-medium hover:underline" href="https://portfolio.nansen.ai/dashboard/APE-JBS8U7">https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>`,
+        donationAlert: `Transferi gerçekleştirmeden önce, mutlaka <a class="text-brand font-medium hover:underline" href="https://twitter.com/haluklevent/status/1622926244512661504" target="_blank">orjinal tweet<a/> üzerinden adresi kopyalayın. Başka cüzdan bilgilerine güvenmeyin.`,
+        donationTotalAlert: `Burada belirtilen USD ve TRY karşılıkları, toplamda 3 cüzdan adresi üzerindeki toplam tahmini değeri gösteriyor. TRY değeri, doğrudan USD'deki değerin güncel kura göre çevirimiyle elde ediliyor. Buradaki değerler her 30 saniyede bir güncelleniyor, son veriye ulaşmak için sayfayı yenilemeniz gerekebilir.<br/><br/>Toplamda toplanan tutar hakkında daha ayrıntılı bilgi edinmek istiyorsanız Nansen üzerinden gerçek zamanlı takip edebilirsiniz: <a class="text-brand font-medium hover:underline break-all" href="https://portfolio.nansen.ai/dashboard/APE-JBS8U7">https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>`,
         balance: "Balance",
         bnbValue: "BNB Value",
         thingsToConsider: "Things to Consider While Making a Transfer",
@@ -37,9 +36,8 @@ i18n.use(initReactI18next).init({
           "Merhabalar, Türkiye’de yaşanan deprem afetine yardımcı olmak için Ahbap aracılığı ile kripto bağış topluyoruz. Bu bağışa kripto para ile destek olmak için aşağıdaki adresleri kullanabiliriz.",
         totalDonation: "Toplanan Bağış Miktarı",
         donationAdresses: "Bağış Yapabileceğiniz Kripto Adresleri",
-        donationAlert:
-          "Transferi gerçekleştirmeden önce, mutlaka orjinal tweet üzerinden adresi kopyalayın. Başka cüzdan bilgilerine güvenmeyin.",
-        donationTotalAlert: `Burada belirtilen USD ve TRY karşılıkları, toplamda 3 cüzdan adresi üzerindeki toplam tahmini değeri gösteriyor. TRY değeri, doğrudan USD'deki değerin güncel kura göre çevirimiyle elde ediliyor. Buradaki değerler her 30 saniyede bir güncelleniyor, son veriye ulaşmak için sayfayı yenilemeniz gerekebilir.<br/><br/>Toplamda toplanan tutar hakkında daha ayrıntılı bilgi edinmek istiyorsanız Nansen üzerinden gerçek zamanlı takip edebilirsiniz: <a class="text-brand font-medium hover:underline" href="https://portfolio.nansen.ai/dashboard/APE-JBS8U7">https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>`,
+        donationAlert: `Transferi gerçekleştirmeden önce, mutlaka <a class="text-brand font-medium hover:underline" href="https://twitter.com/haluklevent/status/1622926244512661504">orjinal tweet<a/> üzerinden adresi kopyalayın. Başka cüzdan bilgilerine güvenmeyin.`,
+        donationTotalAlert: `Burada belirtilen USD ve TRY karşılıkları, toplamda 3 cüzdan adresi üzerindeki toplam tahmini değeri gösteriyor. TRY değeri, doğrudan USD'deki değerin güncel kura göre çevirimiyle elde ediliyor. Buradaki değerler her 30 saniyede bir güncelleniyor, son veriye ulaşmak için sayfayı yenilemeniz gerekebilir.<br/><br/>Toplamda toplanan tutar hakkında daha ayrıntılı bilgi edinmek istiyorsanız Nansen üzerinden gerçek zamanlı takip edebilirsiniz: <a class="text-brand font-medium hover:underline break-all" href="https://portfolio.nansen.ai/dashboard/APE-JBS8U7">https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>`,
         balance: "Bakiye",
         bnbValue: "BNB Değeri",
         thingsToConsider: "Transfer Yapılırken Dikkat Edilmesi Gerekenler",
@@ -53,12 +51,14 @@ i18n.use(initReactI18next).init({
       },
     },
   },
-  lng: "tr",
-  fallbackLng: "tr",
+  lng: "en",
+  fallbackLng: "en",
   interpolation: {
     escapeValue: false,
   },
 });
+
+// TODO: i18n.languages
 
 const App = () => (
   <BrowserRouter>

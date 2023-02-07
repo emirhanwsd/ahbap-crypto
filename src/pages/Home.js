@@ -36,6 +36,7 @@ const Home = () => {
 
         setTransactions(data[1].data.transactions);
       })
+      .catch(() => setLoading(false))
       .finally(() => setLoading(false));
   }, []);
 
@@ -44,6 +45,10 @@ const Home = () => {
       i18next.changeLanguage(locale);
     }
   }, [locale]);
+
+  useEffect(() => {
+    window.history.pushState({}, null, i18next.language);
+  }, [i18next.language]);
 
   const chunkTransactions = chunk(transactions, DONATE_PER_PAGE);
 
@@ -58,7 +63,7 @@ const Home = () => {
   });
 
   return (
-    <div>
+    <>
       <div
         className={`absolute z-10 h-full w-full bg-white flex items-center justify-center transition-all ${
           loading ? "opacity-100 visible" : "opacity-0 invisible"
@@ -91,7 +96,6 @@ const Home = () => {
           <Header />
 
           <div className="mt-12 flex flex-col lg:flex-row gap-8 lg:h-[464px] justify-center lg:-mt-40 px-8 lg:px-0">
-            {/* [TODO]: API'de olmayan eksik datalar tamamlandığında, burası doldurulmalı. */}
             <div className="bg-white lg:w-[564px] border rounded shadow p-6 flex flex-col text-black text-left">
               <h1 className="font-bold text-xl sm:text-2xl">
                 {t("totalDonation")}
@@ -151,7 +155,7 @@ const Home = () => {
                         "0xe1935271D1993434A1a59fE08f24891Dc5F398Cd"
                       );
                     }}
-                    className="px-4 py-2 rounded bg-brand text-white font-medium inline-flex items-center justify-center text-sm hover:bg-green-600 transition-colors"
+                    className="px-4 py-2 rounded bg-brand text-white shadow-sm font-medium inline-flex items-center justify-center text-sm hover:bg-green-600 transition-colors"
                   >
                     Kopyala
                   </button>
@@ -176,7 +180,7 @@ const Home = () => {
                         "0xB67705398fEd380a1CE02e77095fed64f8aCe463"
                       );
                     }}
-                    className="px-4 py-2 rounded bg-brand text-white font-medium inline-flex items-center justify-center text-sm hover:bg-green-600 transition-colors"
+                    className="px-4 py-2 rounded bg-brand text-white shadow-sm font-medium inline-flex items-center justify-center text-sm hover:bg-green-600 transition-colors"
                   >
                     Kopyala
                   </button>
@@ -201,15 +205,16 @@ const Home = () => {
                         "0x868D27c361682462536DfE361f2e20B3A6f4dDD8"
                       );
                     }}
-                    className="px-4 py-2 rounded bg-brand text-white font-medium inline-flex items-center justify-center text-sm hover:bg-green-600 transition-colors"
+                    className="px-4 py-2 rounded bg-brand text-white shadow-sm font-medium inline-flex items-center justify-center text-sm hover:bg-green-600 transition-colors"
                   >
                     Kopyala
                   </button>
                 </div>
 
-                <p className="text-center text-sm text-gray-600">
-                  {t("donationAlert")}
-                </p>
+                <p
+                  dangerouslySetInnerHTML={{ __html: t("donationAlert") }}
+                  className="text-center text-sm text-gray-600"
+                />
               </div>
             </div>
           </div>
@@ -250,7 +255,7 @@ const Home = () => {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 
