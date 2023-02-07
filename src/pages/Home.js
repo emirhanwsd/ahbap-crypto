@@ -1,6 +1,8 @@
 import ahbap from "../assets/ahbap.png";
 import binance from "../assets/binance.png";
 import TableRow from "../components/TableRow";
+import { useState } from "react";
+import classNames from "classnames";
 
 const donates = [
   {
@@ -62,6 +64,8 @@ const donates = [
 ];
 
 const Home = () => {
+  const [page, setPage] = useState(2);
+
   return (
     <div className="pb-24">
       <header>
@@ -200,25 +204,19 @@ const Home = () => {
         </div>
 
         <div className="mt-6 self-end flex items-center gap-x-2">
-          <div className="h-10 w-10 border rounded inline-flex items-center justify-center font-bold hover:bg-gray-100 transition-colors cursor-pointer">
-            1
-          </div>
-
-          <div className="h-10 w-10 border rounded inline-flex items-center justify-center font-bold hover:bg-gray-100 transition-colors cursor-pointer">
-            2
-          </div>
-
-          <div className="h-10 w-10 border rounded inline-flex items-center justify-center font-bold hover:bg-zinc-800 bg-black text-white transition-colors cursor-pointer">
-            3
-          </div>
-
-          <div className="h-10 w-10 border rounded inline-flex items-center justify-center font-bold hover:bg-gray-100 transition-colors cursor-pointer">
-            4
-          </div>
-
-          <div className="h-10 w-10 border rounded inline-flex items-center justify-center font-bold hover:bg-gray-100 transition-colors cursor-pointer">
-            5
-          </div>
+          {[1, 2, 3, 4, 5, 6].map((_) => (
+            <div
+              onClick={() => setPage(_)}
+              className={classNames(
+                "h-10 w-10 border rounded inline-flex items-center justify-center font-bold hover:bg-gray-100 transition-colors cursor-pointer",
+                {
+                  "bg-black text-white hover:bg-zinc-800": page === _,
+                }
+              )}
+            >
+              {_}
+            </div>
+          ))}
         </div>
       </div>
     </div>
