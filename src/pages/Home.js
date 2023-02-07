@@ -1,8 +1,30 @@
 import ahbap from "../assets/ahbap.png";
 import binance from "../assets/binance.png";
 import TableRow from "../components/TableRow";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import classNames from "classnames";
+import i18n from "i18next";
+import { useTranslation, initReactI18next } from "react-i18next";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import { Menu, Transition } from "@headlessui/react";
+import tr from "../assets/flags/tr.png";
+import en from "../assets/flags/en.png";
+
+i18n.use(initReactI18next).init({
+  resources: {
+    en: {
+      translation: {
+        "Welcome to React": "Welcome to React and react-i18next",
+      },
+    },
+  },
+  lng: "en",
+  fallbackLng: "en",
+
+  interpolation: {
+    escapeValue: false,
+  },
+});
 
 const donates = [
   {
@@ -64,6 +86,8 @@ const donates = [
 ];
 
 const Home = () => {
+  const { t } = useTranslation();
+
   const [page, setPage] = useState(2);
 
   return (
@@ -84,6 +108,74 @@ const Home = () => {
             Ahbap aracılığı ile kripto bağış topluyoruz. Bu bağışa kripto para
             ile destek olmak için aşağıdaki adresleri kullanabiliriz.
           </h2>
+
+          <Menu
+            as="div"
+            className="absolute top-6 right-24 inline-block text-left"
+          >
+            <div>
+              <Menu.Button className="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none hover:opacity-90 transition-opacity">
+                <img className="h-5 rounded-sm mr-2" src={tr} alt="" />
+
+                <span>TR Türkçe</span>
+
+                <ChevronDownIcon
+                  className="-mr-1 ml-2 h-5 w-5"
+                  aria-hidden="true"
+                />
+              </Menu.Button>
+            </div>
+
+            <Transition
+              as={Fragment}
+              enter="transition ease-out duration-100"
+              enterFrom="transform opacity-0 scale-95"
+              enterTo="transform opacity-100 scale-100"
+              leave="transition ease-in duration-75"
+              leaveFrom="transform opacity-100 scale-100"
+              leaveTo="transform opacity-0 scale-95"
+            >
+              <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                <div className="py-1">
+                  <Menu.Item>
+                    {({ active }) => (
+                      <a
+                        href="#"
+                        className={classNames(
+                          active
+                            ? "bg-gray-100 text-gray-900"
+                            : "text-gray-700",
+                          "block px-4 py-2 text-sm flex items-center gap-x-2"
+                        )}
+                      >
+                        <img className="h-5 rounded-sm" src={tr} alt="" />
+
+                        <span>TR Türkçe</span>
+                      </a>
+                    )}
+                  </Menu.Item>
+
+                  <Menu.Item>
+                    {({ active }) => (
+                      <a
+                        href="#"
+                        className={classNames(
+                          active
+                            ? "bg-gray-100 text-gray-900"
+                            : "text-gray-700",
+                          "block px-4 py-2 text-sm flex items-center gap-x-2"
+                        )}
+                      >
+                        <img className="h-5 rounded-sm" src={en} alt="" />
+
+                        <span>EN English</span>
+                      </a>
+                    )}
+                  </Menu.Item>
+                </div>
+              </Menu.Items>
+            </Transition>
+          </Menu>
         </div>
 
         <div className="mt-12 flex gap-x-6 h-[420px] justify-center -mt-40">
@@ -197,6 +289,7 @@ const Home = () => {
         <h1 className="text-2xl font-bold">
           Hangi adrese ne kadar bağış yapıldı?
         </h1>
+
         <div>
           {donates.map((donate) => (
             <TableRow {...donate} />
