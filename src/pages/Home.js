@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { useTranslation, initReactI18next } from "react-i18next";
 import i18n from "i18next";
+import chunk from 'lodash.chunk';
 
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
-import binance from "../assets/binance.png";
 import TableRow from "../components/TableRow";
 
 import Header from "../components/Header";
@@ -56,146 +56,27 @@ i18n.use(initReactI18next).init({
   },
 });
 
-const donates = [
-  // Mock Data
-  {
-    image: binance,
-    a: "Binance-Peg...(BUSD)",
-    b: "94,308.043284 BUSD",
-    c: "$92,322.82",
-    d: "@1.0002",
-  },
-  {
-    image: binance,
-    a: "Binance-Peg...(BUSD)",
-    b: "94,308.043284 BUSD",
-    c: "$92,322.82",
-    d: "@1.0002",
-  },
-  {
-    image: binance,
-    a: "Binance-Peg...(BUSD)",
-    b: "94,308.043284 BUSD",
-    c: "$92,322.82",
-    d: "@1.0002",
-  },
-  {
-    image: binance,
-    a: "Binance-Peg...(BUSD)",
-    b: "94,308.043284 BUSD",
-    c: "$92,322.82",
-    d: "@1.0002",
-  },
-  {
-    image: binance,
-    a: "Binance-Peg...(BUSD)",
-    b: "94,308.043284 BUSD",
-    c: "$92,322.82",
-    d: "@1.0002",
-  },
-  {
-    image: binance,
-    a: "Binance-Peg...(BUSD)",
-    b: "94,308.043284 BUSD",
-    c: "$92,322.82",
-    d: "@1.0002",
-  },
-  {
-    image: binance,
-    a: "Binance-Peg...(BUSD)",
-    b: "94,308.043284 BUSD",
-    c: "$92,322.82",
-    d: "@1.0002",
-  },
-  {
-    image: binance,
-    a: "Binance-Peg...(BUSD)",
-    b: "94,308.043284 BUSD",
-    c: "$92,322.82",
-    d: "@1.0002",
-  },
-  {
-    image: binance,
-    a: "Binance-Peg...(BUSD)",
-    b: "94,308.043284 BUSD",
-    c: "$92,322.82",
-    d: "@1.0002",
-  },
-  {
-    image: binance,
-    a: "Binance-Peg...(BUSD)",
-    b: "94,308.043284 BUSD",
-    c: "$92,322.82",
-    d: "@1.0002",
-  },
-  {
-    image: binance,
-    a: "Binance-Peg...(BUSD)",
-    b: "94,308.043284 BUSD",
-    c: "$92,322.82",
-    d: "@1.0002",
-  },
-  {
-    image: binance,
-    a: "Binance-Peg...(BUSD)",
-    b: "94,308.043284 BUSD",
-    c: "$92,322.82",
-    d: "@1.0002",
-  },
-  {
-    image: binance,
-    a: "Binance-Peg...(BUSD)",
-    b: "94,308.043284 BUSD",
-    c: "$92,322.82",
-    d: "@1.0002",
-  },
-  {
-    image: binance,
-    a: "Binance-Peg...(BUSD)",
-    b: "94,308.043284 BUSD",
-    c: "$92,322.82",
-    d: "@1.0002",
-  },
-  {
-    image: binance,
-    a: "Binance-Peg...(BUSD)",
-    b: "94,308.043284 BUSD",
-    c: "$92,322.82",
-    d: "@1.0002",
-  },
-  {
-    image: binance,
-    a: "Binance-Peg...(BUSD)",
-    b: "94,308.043284 BUSD",
-    c: "$92,322.82",
-    d: "@1.0002",
-  },
-  {
-    image: binance,
-    a: "Binance-Peg...(BUSD)",
-    b: "94,308.043284 BUSD",
-    c: "$92,322.82",
-    d: "@1.0002",
-  },
-];
-
 const DONATE_PER_PAGE = 5;
 
 const Home = () => {
   const { t } = useTranslation();
-  const [loading, setLoading] = useState(false);
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(0);
+  const [transaction, setTransaction] = useState([]);
+
+
+  const fetchTransactions = () => fetch('https://ahbap-wallets.vercel.app/api/transaction')
+    .then(res => res.json())
+    .then(res => {
+      setTransaction(res.transactions)
+    })
 
   useEffect(() => {
-    // TODO
-    setLoading(true);
+    fetchTransactions();
+  }, []);
 
-    // Sayfaya göre istek atılacak.
+  const chunkTransaction = chunk(transaction, DONATE_PER_PAGE);
 
-    setLoading(false);
 
-    // İstek tamamlandığında tekrar false olarak ayarlanacak.
-  }, [page]);
 
   return (
     <div className="pb-24">
@@ -280,33 +161,27 @@ const Home = () => {
         </h1>
 
         <div>
-          {[...donates].slice(0, DONATE_PER_PAGE).map((donate) => (
-            <TableRow {...donate} />
+          {chunkTransaction[page]?.map((transaction, index) => (
+            <TableRow key={index} {...transaction} />
           ))}
         </div>
 
         <div className="mt-6 self-center sm:self-end flex items-center gap-x-4 select-none">
           <button
-            disabled={loading || page === 1}
-            onClick={() => {
-              if (page - 1 > 0) {
-                setPage((page) => page - 1);
-              }
-            }}
+            disabled={page === 0}
+            onClick={() => setPage(page - 1)}
             className="h-10 w-10 border rounded inline-flex items-center justify-center font-bold hover:bg-gray-100 transition-all cursor-pointer disabled:opacity-50 disabled:pointer-events-none"
           >
             <ChevronLeftIcon className="h-4" />
           </button>
 
           <span>
-            {page}. {t("page")}
+            {page + 1}. {t("page")}
           </span>
 
           <button
-            disabled={loading}
-            onClick={() => {
-              setPage((page) => page + 1);
-            }}
+            disabled={page === chunkTransaction.length - 1}
+            onClick={() => setPage(page + 1)}
             className="h-10 w-10 border rounded inline-flex items-center justify-center font-bold hover:bg-gray-100 transition-all cursor-pointer disabled:pointer-events-none"
           >
             <ChevronRightIcon className="h-4" />
