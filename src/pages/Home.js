@@ -1,14 +1,10 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import chunk from "lodash.chunk";
-
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
-
 import TableRow from "../components/TableRow";
-
 import Header from "../components/Header";
 import axios from "axios";
-
 import twitter from "../assets/twitter.svg";
 import { useParams } from "react-router-dom";
 import i18next from "i18next";
@@ -20,22 +16,26 @@ const Home = () => {
   const { locale } = useParams();
   const { t } = useTranslation();
   const [page, setPage] = useState(0);
-  const [balance, setBalance] = useState([]);
+  const [balance, setBalance] = useState({
+    totalUsdBalance: 0,
+    totalBalance: 0,
+  });
   const [loading, setLoading] = useState(true);
   const [transactions, setTransactions] = useState([]);
 
   const getInformations = () => {
     let endpoints = [
-      "https://dwy4rzipq9scp.cloudfront.net/response.json",
+      "https://ahbap-wallets.vercel.app/api/balance",
       "https://d2uiuug41n1t0n.cloudfront.net/api/transaction",
     ];
 
     axios
       .all(endpoints.map((endpoint) => axios.get(endpoint)))
       .then((data) => {
-        setBalance(data[0].data);
+        const [balanceRes, transationsRes] = data;
 
-        setTransactions(data[1].data.transactions);
+        setBalance(balanceRes.data);
+        setTransactions(transationsRes.data.transactions);
       })
       .finally(() => setLoading(false));
   };
@@ -67,19 +67,22 @@ const Home = () => {
   const usdFormatter = new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "USD",
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
   });
 
   const tryFormatter = new Intl.NumberFormat("tr-TR", {
     style: "currency",
     currency: "TRY",
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
   });
 
   return (
     <>
       <div
-        className={`absolute z-10 h-full w-full bg-white flex items-center justify-center transition-all ${
-          loading ? "opacity-100 visible" : "opacity-0 invisible"
-        }`}
+        className={`absolute z-10 h-full w-full bg-white flex items-center justify-center transition-all ${loading ? "opacity-100 visible" : "opacity-0 invisible"
+          }`}
       >
         <svg
           className="animate-spin h-8 w-8 text-brand"
@@ -116,7 +119,7 @@ const Home = () => {
               <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="relative py-4 inline-flex items-center justify-center rounded border border-brand text-brand text-2xl font-bold hover:bg-brand hover:text-white transition-colors">
                   <span>
-                    {usdFormatter.format(balance.usd).replace(".00", "")}
+                    {usdFormatter.format(Number(balance.totalUsdBalance))}
                   </span>
 
                   <div className="absolute -top-1 -right-1 flex h-3 w-3">
@@ -128,7 +131,7 @@ const Home = () => {
 
                 <div className="relative py-4 inline-flex items-center justify-center rounded border border-brand text-brand text-2xl font-bold hover:bg-brand hover:text-white transition-colors">
                   <span>
-                    {tryFormatter.format(balance.try).replace(",00", "")}
+                    {tryFormatter.format(Number(balance.totalBalance))}
                   </span>
 
                   <div className="absolute -top-1 -right-1 flex h-3 w-3">
