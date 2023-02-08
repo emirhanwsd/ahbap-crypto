@@ -65,9 +65,8 @@ const Home = () => {
   return (
     <>
       <div
-        className={`absolute z-10 h-full w-full bg-white flex items-center justify-center transition-all ${
-          loading ? "opacity-100 visible" : "opacity-0 invisible"
-        }`}
+        className={`absolute z-10 h-full w-full bg-white flex items-center justify-center transition-all ${loading ? "opacity-100 visible" : "opacity-0 invisible"
+          }`}
       >
         <svg
           className="animate-spin h-8 w-8 text-brand"
@@ -95,7 +94,7 @@ const Home = () => {
         <div className="pb-24">
           <Header />
 
-          <div className="mt-12 flex flex-col lg:flex-row gap-8 lg:h-[464px] justify-center lg:-mt-40 px-8 lg:px-0">
+          <div className="mt-12 flex flex-col lg:flex-row gap-8 lg:min-h-[464px] justify-center lg:-mt-40 px-8 lg:px-0">
             <div className="bg-white lg:w-[564px] border rounded shadow p-6 flex flex-col text-black text-left">
               <h1 className="font-bold text-xl sm:text-2xl">
                 {t("totalDonation")}
@@ -126,6 +125,7 @@ const Home = () => {
                 <a
                   href="https://twitter.com/haluklevent/status/1622926244512661504"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <img
                     className="h-8 hover:opacity-80 transition-opacity"
@@ -157,7 +157,7 @@ const Home = () => {
                     }}
                     className="px-4 py-2 rounded bg-brand text-white shadow-sm font-medium inline-flex items-center justify-center text-sm hover:bg-green-600 transition-colors"
                   >
-                    {t("copy")}
+                    Copy
                   </button>
                 </div>
 
@@ -182,7 +182,7 @@ const Home = () => {
                     }}
                     className="px-4 py-2 rounded bg-brand text-white shadow-sm font-medium inline-flex items-center justify-center text-sm hover:bg-green-600 transition-colors"
                   >
-                    {t("copy")}
+                    Copy
                   </button>
                 </div>
 
@@ -207,7 +207,7 @@ const Home = () => {
                     }}
                     className="px-4 py-2 rounded bg-brand text-white shadow-sm font-medium inline-flex items-center justify-center text-sm hover:bg-green-600 transition-colors"
                   >
-                    {t("copy")}
+                    Copy
                   </button>
                 </div>
 

@@ -9,7 +9,9 @@ import ahbap from "../assets/ahbap.png";
 const Header = () => {
   const { t, i18n } = useTranslation();
 
-  const allLanguages = Object.keys(i18n.services.resourceStore.data);
+  const allLanguages = Object.keys(i18n.services.resourceStore.data)
+    .sort((a, b) => a.localeCompare(b));
+
 
   const getFlagImage = (lang) => {
     const flagMap = {

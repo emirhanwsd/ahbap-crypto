@@ -465,7 +465,7 @@
         "subTitle": "Vi samlar in donationer i kryptovaluta för att stödja jordbävningshjälpen i Turkiet. Om du vill bidra kan du använda någon av följande adresser. Tack för din generositet!.",
         "totalDonation": "Beloppet av insamlade donationer",
         "donationAdresses": "Kryptoadresser som du kan donera till",
-        "donationAlert": "Innan du gör överföringen ska du alltid kopiera adressen från den <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'><a/>. Lita inte på annan information från plånboken.",
+        "donationAlert": "Innan du gör överföringen ska du alltid kopiera adressen från den <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'>https://twitter.com/haluklevent/status/1622926244512661504<a/>. Lita inte på annan information från plånboken.",
         "donationTotalAlert": "De värden i USD och TRY som visas här är det sammanlagda uppskattade värdet av alla tre plånboksadresser. TRY-värdet beräknas genom att konvertera USD-värdet till den aktuella växelkursen. Dessa värden uppdateras var 30:e sekund, så du kan behöva uppdatera sidan för att få den senaste informationen.<br/><br/>Om du är intresserad av att hålla koll på det totala insamlade beloppet kan du följa det i realtid på Nansen.<a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
         "balance": "Balans",
         "bnbValue": "BNB Värde",
