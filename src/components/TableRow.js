@@ -1,8 +1,6 @@
 import { SYMBOL_NAMES } from "../constants";
 
-const TableRow = (
-  { chain, value, symbol, from_address, transaction_hash } // TODO: Name
-) => (
+const TableRow = ({ chain, value, symbol, to_address }) => (
   <div className="py-4 flex flex-col sm:flex-row sm:items-center gap-y-4 justify-between border-b">
     <div className="flex items-center gap-x-2.5">
       <img className="h-8 w-8" src={`/${chain}.svg`} alt="" />
@@ -12,7 +10,7 @@ const TableRow = (
           {SYMBOL_NAMES[symbol]} ({symbol})
         </span>
 
-        <span className="truncate w-64 md:w-auto">{from_address}</span>
+        <span className="truncate w-64 md:w-auto">{to_address}</span>
       </div>
     </div>
 
