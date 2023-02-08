@@ -13,6 +13,7 @@ import twitter from "../assets/twitter.svg";
 import { useParams } from "react-router-dom";
 import i18next from "i18next";
 
+const REFRESH_SECOND = 10;
 const DONATE_PER_PAGE = 10;
 
 const Home = () => {
@@ -23,7 +24,7 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
   const [transactions, setTransactions] = useState([]);
 
-  useEffect(() => {
+  const getInformations = () => {
     let endpoints = [
       "https://dwy4rzipq9scp.cloudfront.net/response.json",
       "https://d2uiuug41n1t0n.cloudfront.net/api/transaction",
@@ -36,8 +37,19 @@ const Home = () => {
 
         setTransactions(data[1].data.transactions);
       })
-      .catch(() => setLoading(false))
       .finally(() => setLoading(false));
+  };
+
+  useEffect(() => {
+    getInformations();
+
+    let interval = setInterval(() => {
+      getInformations();
+    }, REFRESH_SECOND * 1000);
+
+    return () => {
+      clearInterval(interval);
+    };
   }, []);
 
   useEffect(() => {
@@ -65,8 +77,9 @@ const Home = () => {
   return (
     <>
       <div
-        className={`absolute z-10 h-full w-full bg-white flex items-center justify-center transition-all ${loading ? "opacity-100 visible" : "opacity-0 invisible"
-          }`}
+        className={`absolute z-10 h-full w-full bg-white flex items-center justify-center transition-all ${
+          loading ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
       >
         <svg
           className="animate-spin h-8 w-8 text-brand"
@@ -101,12 +114,28 @@ const Home = () => {
               </h1>
 
               <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="py-4 inline-flex items-center justify-center rounded border border-brand text-brand text-2xl font-bold hover:bg-brand hover:text-white transition-colors">
-                  {usdFormatter.format(balance.usd).replace(".00", "")}
+                <div className="relative py-4 inline-flex items-center justify-center rounded border border-brand text-brand text-2xl font-bold hover:bg-brand hover:text-white transition-colors">
+                  <span>
+                    {usdFormatter.format(balance.usd).replace(".00", "")}
+                  </span>
+
+                  <div className="absolute -top-1 -right-1 flex h-3 w-3">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
+
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500" />
+                  </div>
                 </div>
 
-                <div className="py-4 inline-flex items-center justify-center rounded border border-brand text-brand text-2xl font-bold hover:bg-brand hover:text-white transition-colors">
-                  {tryFormatter.format(balance.try).replace(",00", "")}
+                <div className="relative py-4 inline-flex items-center justify-center rounded border border-brand text-brand text-2xl font-bold hover:bg-brand hover:text-white transition-colors">
+                  <span>
+                    {tryFormatter.format(balance.try).replace(",00", "")}
+                  </span>
+
+                  <div className="absolute -top-1 -right-1 flex h-3 w-3">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
+
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500" />
+                  </div>
                 </div>
               </div>
 
