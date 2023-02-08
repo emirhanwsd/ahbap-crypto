@@ -138,12 +138,12 @@
     },
     "fi": {
       "translation": {
-        "title": "Turkkia ravistelevat valtavat maanjäristykset. 10 000 rakennusta on romahtanut. Maanjäristyksen alla on 50 000 ihmistä. 13 miljoonaa ihmistä odottaa apua. Voit lähettää tukesi seuraavien kryptolompakko-osoitteiden kautta.",
-        "subTitle": "Hei, keräämme Ahbapin kautta kryptolahjoituksia Turkin maanjäristyskatastrofin auttamiseksi. Voimme käyttää alla olevia osoitteita tämän lahjoituksen tukemiseen kryptovaluutalla.",
+        "title": "Turkki on kärsinyt useista tuhoisista maanjäristyksistä. 10 000 rakennusta on tuhoutunut ja 50 000 ihmistä on loukussa raunioiden alla. Avun tarpeessa on 13 miljoonaa ihmistä. Jos haluat auttaa, voit lahjoittaa edellä mainittujen kryptolompakko-osoitteiden kautta.",
+        "subTitle": "Hei, keräämme kryptovaluuttalahjoituksia tukeaksemme Turkin maanjäristyksen avustustoimia. Mikäli haluat osallistua, voit käyttää valitsemaasi sivustoa. Kiitos anteliaisuudestasi!",
         "totalDonation": "Kerättyjen Lahjoitusten Määrä",
-        "donationAdresses": "Krypto-osoitteet, Joita Voit Lahjoittaa",
+        "donationAdresses": "Krypto-osoitteet joihin voit lahjoittaa",
         "donationAlert": "Kopioi aina ennen siirtoa osoite <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'>alkuperäisestä twiitistä<a/>. Älä luota muiden lompakoiden tietoihin.",
-        "donationTotalAlert": "Tässä ilmoitetut USD- ja TRY-vastikkeet näyttävät arvioidut kokonaisarvot 3 lompakkoosoitteessa. TRY-arvo saadaan muuntamalla USD-arvo suoraan nykyiseen valuuttakurssiin. Arvot päivitetään 30 sekunnin välein, joten sinun on ehkä päivitettävä sivu saadaksesi uusimmat tiedot.<br/><br/>Jos haluat lisätietoja kerätystä kokonaissummasta, voit seurata sitä reaaliajassa Nansenissa: <a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
+        "donationTotalAlert": "Tässä esitettyjen USD ja TRY valuuttojen arvot ovat kaikkien kolmen lompakkoosoitteen arvioitu yhteenlaskettu arvo. TRY-valuutan arvo lasketaan muuntamalla USD-valuutan arvo nykyisellä vaihtokurssilla. Nämä arvot päivittyvät 30 sekunnin välein, joten sinun on ehkä päivitettävä sivu saadaksesi uusimmat tiedot.<br/><br/>Jos haluat lisätietoja kerätystä kokonaissummasta, voit seurata sitä reaaliajassa Nansen-sivustolla: <a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
         "balance": "Saldo",
         "bnbValue": "BNB-arvo",
         "thingsToConsider": "Ota huomioon siirtoa tehdessäsi",
