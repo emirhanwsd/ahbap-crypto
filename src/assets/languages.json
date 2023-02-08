@@ -175,7 +175,7 @@
         "title": "Turkey has been hit hard by a series of earthquakes. 10,000 buildings have been destroyed and 50,000 people are trapped beneath the rubble. 13 million people are in need of assistance. If you would like to help, you can donate through the following crypto wallet address.",
         "subTitle": "We are collecting cryptocurrency donations to support the earthquake relief efforts in Turkey. If you would like to contribute, please use one of the following addresses. Thank you for your generosity!",
         "totalDonation": "Amount of Donations Collected",
-        "donationAdresses": "Crypto Addresses You Can Donate To",
+        "donationAdresses": "Addresses You Can Donate To",
         "donationAlert": "Before making the transfer, always copy the address from the <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'>original tweet<a/>. Do not trust other wallet information.",
         "donationTotalAlert": "The USD and TRY values shown here are the combined estimated value of all 3 wallet addresses. The TRY value is calculated by converting the USD value to the current exchange rate. These values are updated every 30 seconds, so you may need to refresh the page to get the latest information..<br/><br/>If you're interested in keeping track of the total amount collected, you can follow it in real time on Nansen.<a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
         "balance": "balance",
