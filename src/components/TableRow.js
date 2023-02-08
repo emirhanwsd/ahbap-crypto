@@ -1,9 +1,13 @@
-import { SYMBOL_NAMES } from "../constants";
+import { SYMBOL_NAMES } from '../constants';
 
 const TableRow = ({ chain, value, symbol, to_address }) => (
   <div className="py-4 flex flex-col sm:flex-row sm:items-center gap-y-4 justify-between border-b">
     <div className="flex items-center gap-x-2.5">
-      <img className="h-8 w-8" src={`/${chain}.svg`} alt="" />
+      <img
+        className="h-8 w-8"
+        src={`/${chain}.svg`}
+        alt=""
+      />
 
       <div className="flex flex-col">
         <span>
