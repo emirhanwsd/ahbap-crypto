@@ -2,7 +2,7 @@
   "resources": {
     "tr": {
       "translation": {
-        "title": "Türkiye büyük depremlerle sarsılıyor. 10.000 bina yıkıldı. Göcük altında 50.000 kişi var. 13 milyon insan yardım bekliyor. Aşağıdaki kriptopara cüzdan adresleri üzerinden yardımlarınızı iletebilirsiniz.",
+        "title": "Türkiye büyük depremlerle sarsılıyor. 10.000 bina yıkıldı. Göçük altında 50.000 kişi var. 13 milyon insan yardım bekliyor. Aşağıdaki kriptopara cüzdan adresleri üzerinden yardımlarınızı iletebilirsiniz.",
         "subTitle": "Merhabalar, Türkiye’de yaşanan deprem afetine yardımcı olmak için Ahbap aracılığı ile kripto bağış topluyoruz. Bu bağışa kripto para ile destek olmak için aşağıdaki adresleri kullanabiliriz.",
         "totalDonation": "Toplanan Bağış Miktarı",
         "donationAdresses": "Bağış Yapabileceğiniz Kripto Adresleri",
@@ -173,7 +173,7 @@
     "en": {
       "translation": {
         "title": "Turkey has been hit hard by a series of earthquakes. 10,000 buildings have been destroyed and 50,000 people are trapped beneath the rubble. 13 million people are in need of assistance. If you would like to help, you can donate through the following crypto wallet address.",
-        "subTitle": "We are collecting cryptocurrency donations to support the earthquake relief efforts in Turkey. If you would like to contribute, please use one of the following addresses. Thank you for your generosity!.",
+        "subTitle": "We are collecting cryptocurrency donations to support the earthquake relief efforts in Turkey. If you would like to contribute, please use one of the following addresses. Thank you for your generosity!",
         "totalDonation": "Amount of Donations Collected",
         "donationAdresses": "Crypto Addresses You Can Donate To",
         "donationAlert": "Before making the transfer, always copy the address from the <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'>original tweet<a/>. Do not trust other wallet information.",
@@ -465,7 +465,7 @@
         "subTitle": "Vi samlar in donationer i kryptovaluta för att stödja jordbävningshjälpen i Turkiet. Om du vill bidra kan du använda någon av följande adresser. Tack för din generositet!.",
         "totalDonation": "Beloppet av insamlade donationer",
         "donationAdresses": "Kryptoadresser som du kan donera till",
-        "donationAlert": "Innan du gör överföringen ska du alltid kopiera adressen från den <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'>https://twitter.com/haluklevent/status/1622926244512661504<a/>. Lita inte på annan information från plånboken.",
+        "donationAlert": "Innan du gör överföringen ska du alltid kopiera adressen från den <a class='text-brand font-medium hover:underline' href='https://twitter.com/haluklevent/status/1622926244512661504'>ursprungliga tweet<a/>. Lita inte på annan information från plånboken.",
         "donationTotalAlert": "De värden i USD och TRY som visas här är det sammanlagda uppskattade värdet av alla tre plånboksadresser. TRY-värdet beräknas genom att konvertera USD-värdet till den aktuella växelkursen. Dessa värden uppdateras var 30:e sekund, så du kan behöva uppdatera sidan för att få den senaste informationen.<br/><br/>Om du är intresserad av att hålla koll på det totala insamlade beloppet kan du följa det i realtid på Nansen.<a class='text-brand font-medium hover:underline break-all' href='https://portfolio.nansen.ai/dashboard/APE-JBS8U7'>https://portfolio.nansen.ai/dashboard/APE-JBS8U7</a>",
         "balance": "Balans",
         "bnbValue": "BNB Värde",
