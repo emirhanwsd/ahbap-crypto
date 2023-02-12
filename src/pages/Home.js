@@ -16,6 +16,57 @@ import i18next from "i18next";
 const REFRESH_SECOND = 10;
 const DONATE_PER_PAGE = 10;
 
+const cryptos = [
+  {
+    name: "ERC20",
+    address: "0xe1935271D1993434A1a59fE08f24891Dc5F398Cd",
+  },
+  {
+    name: "BEP20",
+    address: "0xB67705398fEd380a1CE02e77095fed64f8aCe463",
+  },
+  {
+    name: "Avalanche",
+    address: "0x868D27c361682462536DfE361f2e20B3A6f4dDD8",
+  },
+  {
+    name: "BTC",
+    address: "bc1q0qk6088ysn5d3573wqky37xtlhaw3lta8eaqdslgz4840lrtefssxsp0p5",
+  },
+  {
+    name: "ETH",
+    address: "0x05F4510501B11388c71d657044b7Bf52e2637FaC",
+  },
+  {
+    name: "USDT - ERC20",
+    address: "0x05F4510501B11388c71d657044b7Bf52e2637FaC",
+  },
+  {
+    name: "USDT - TRC20",
+    address: "TYgthAAfSjkEb8FUsQRJXsf7xoFyAZVmQN",
+  },
+  {
+    name: "USDT - C-Chain",
+    address: "0x05F4510501B11388c71d657044b7Bf52e2637FaC",
+  },
+  {
+    name: "Avalanche - C-Chain",
+    address: "0x05F4510501B11388c71d657044b7Bf52e2637FaC",
+  },
+  {
+    name: "Avalanche - X-Chain",
+    address: "X-avax1umf3jhntrnvxw55vr30aw6lacc6lm7ww003xg2",
+  },
+  {
+    name: "DOT",
+    address: "153N7YvYpv9KgViCUSRm1j2MXEgcqX24tk7jno6V1oqudHhQ",
+  },
+  {
+    name: "ATOM",
+    address: "cosmos1xlp4k2yz6zhhqxlp0hwdfqlpsz9k9gru3ezese",
+  },
+];
+
 const Home = () => {
   const { locale } = useParams();
   const { t } = useTranslation();
@@ -165,79 +216,31 @@ const Home = () => {
               </div>
 
               <div className="mt-6 space-y-4">
-                <div className="border rounded p-4 flex items-center justify-between">
-                  <div className="space-y-2">
-                    <h6 className="font-semibold">
-                      {t("cryptoNetwork", {
-                        crypto: "ERC20",
-                      })}
-                    </h6>
+                <div className="space-y-4 overflow-auto h-80">
+                  {cryptos.map((crypto) => (
+                    <div className="border rounded p-4 flex items-center justify-between">
+                      <div className="space-y-2 w-3/4 truncate">
+                        <h6 className="font-semibold">
+                          {t("cryptoNetwork", {
+                            crypto: crypto.name,
+                          })}
+                        </h6>
 
-                    <span className="hidden sm:block text-sm">
-                      0xe1935271D1993434A1a59fE08f24891Dc5F398Cd
-                    </span>
-                  </div>
+                        <span className="hidden sm:block truncate text-sm">
+                          {crypto.address}
+                        </span>
+                      </div>
 
-                  <button
-                    onClick={() => {
-                      navigator.clipboard.writeText(
-                        "0xe1935271D1993434A1a59fE08f24891Dc5F398Cd"
-                      );
-                    }}
-                    className="px-4 py-2 rounded bg-brand text-white shadow-sm font-medium inline-flex items-center justify-center text-sm hover:bg-green-600 transition-colors"
-                  >
-                    Copy
-                  </button>
-                </div>
-
-                <div className="border rounded p-4 flex items-center justify-between">
-                  <div className="space-y-2">
-                    <h6 className="font-semibold">
-                      {t("cryptoNetwork", {
-                        crypto: "BEP20",
-                      })}
-                    </h6>
-
-                    <span className="hidden sm:block text-sm">
-                      0xB67705398fEd380a1CE02e77095fed64f8aCe463
-                    </span>
-                  </div>
-
-                  <button
-                    onClick={() => {
-                      navigator.clipboard.writeText(
-                        "0xB67705398fEd380a1CE02e77095fed64f8aCe463"
-                      );
-                    }}
-                    className="px-4 py-2 rounded bg-brand text-white shadow-sm font-medium inline-flex items-center justify-center text-sm hover:bg-green-600 transition-colors"
-                  >
-                    Copy
-                  </button>
-                </div>
-
-                <div className="border rounded p-4 flex items-center justify-between">
-                  <div className="space-y-2">
-                    <h6 className="font-semibold">
-                      {t("cryptoNetwork", {
-                        crypto: "Avalanche",
-                      })}
-                    </h6>
-
-                    <span className="hidden sm:block text-sm">
-                      0x868D27c361682462536DfE361f2e20B3A6f4dDD8
-                    </span>
-                  </div>
-
-                  <button
-                    onClick={() => {
-                      navigator.clipboard.writeText(
-                        "0x868D27c361682462536DfE361f2e20B3A6f4dDD8"
-                      );
-                    }}
-                    className="px-4 py-2 rounded bg-brand text-white shadow-sm font-medium inline-flex items-center justify-center text-sm hover:bg-green-600 transition-colors"
-                  >
-                    Copy
-                  </button>
+                      <button
+                        onClick={() => {
+                          navigator.clipboard.writeText(crypto.address);
+                        }}
+                        className="px-4 py-2 rounded bg-brand text-white shadow-sm font-medium inline-flex items-center justify-center text-sm hover:bg-green-600 transition-colors"
+                      >
+                        Copy
+                      </button>
+                    </div>
+                  ))}
                 </div>
 
                 <p
